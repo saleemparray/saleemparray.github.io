@@ -6,30 +6,60 @@
 	<title></title>
 	
 	<style>
-		 a {
-		 color:red;
-	         marign: 10px;
-	         padding: 10px 10px;
-		 border:1px solid red;
-		 border-radius: 30px;
-		 background-color:black;
-		 decoration:none;
-		}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 	</style>
 	
 </head>
 <body>
 	<div class="templates">
 
-	<a href="template1"> Template 1 </a><br><br><br>
-	<a href="template2"> Template 2 </a><br><br><br>
-	<a href="template3"> Template 3 </a><br><br><br>
-	<a href="template4"> Template 4 </a><br><br><br>
-	<a href="template5"> Template 5 </a><br><br><br>
-	<a href="template6"> Template 6 </a><br><br><br>
-	<a href="template7"> Template 7 </a><br><br><br>
-	<a href="template8"> Template 8 </a><br><br><br>
-	<a href="template9"> Template 9 </a><br>
+	<a class="button" href="template1"> Template 1 </a><br><br><br>
+	<a class="button" href="template2"> Template 2 </a><br><br><br>
+	<a class="button" href="template3"> Template 3 </a><br><br><br>
+	<a class="button" href="template4"> Template 4 </a><br><br><br>
+	<a class="button" href="template5"> Template 5 </a><br><br><br>
+	<a class="button" href="template6"> Template 6 </a><br><br><br>
+	<a class="button" href="template7"> Template 7 </a><br><br><br>
+	<a class="button" href="template8"> Template 8 </a><br><br><br>
+	<a class="button" href="template9"> Template 9 </a><br>
        </div>
 </body>
 </html>
