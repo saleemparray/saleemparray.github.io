@@ -1,0 +1,622 @@
+*{
+	padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: #01041C;
+    overflow-x: hidden;
+}
+
+.desktop{
+    background: #01041C;
+
+}
+
+.desktop-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Desktop Logo styling*/
+
+.desktop-nav .logo{
+    display: flex;
+    align-items: center;
+    margin: 16px 0px 0px 152px;
+    gap: 13.5px;
+}
+
+.desktop-nav .logo .logo-text{
+    color: #0084FF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Desktop Manu styling*/
+
+.desktop-nav .main-manu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.desktop-nav .main-manu li{
+    list-style: none;
+    margin: 23px 0px 0px 0px;
+}
+
+.desktop-nav .main-manu li a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+}
+
+.desktop-nav .main-manu li a.active{
+	color: #0084FF;
+	font-family: Plus Jakarta Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.desktop-nav .main-manu li a.active::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+	height: 2px;
+	background: #0084FF;
+	left: 0px;
+	bottom: -6px;
+}
+
+/* Desktop Navbar Get Started Button styling*/
+
+.desktop-nav .btn{
+    width: 117px;
+    height: 36px;
+    border-radius: 4px;
+    border: 0.536px solid rgba(0, 132, 255, 0.40);
+    background: linear-gradient(180deg, rgba(102, 96, 160, 0.20) 0%, rgba(102, 96, 160, 0.00) 100%);
+    backdrop-filter: blur(2px);
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 15px 152px 0px 0px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Desktop Middle text styling*/
+
+.hero-container{
+  text-align: center;
+}
+
+.hero-container .main-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 123px 0px 0px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-container .main-text .inner-text{
+    background: linear-gradient(268deg, #0FD3FE 8.33%, #0E41ED 66.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.hero-container .small-text{
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.40);
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 16px 0px 0px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-container .mid-Btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+}
+
+.hero-container .mid-Btn .tutorial-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 35px 0px 0px 0px;
+}
+
+.hero-container .mid-Btn .btn{
+    margin: 38px 0px 0px 0px;
+    border-radius: 4px;
+    border: 0.536px solid rgba(0, 132, 255, 0.40);
+    background: linear-gradient(180deg, rgba(102, 96, 160, 0.20) 0%, rgba(102, 96, 160, 0.00) 100%);
+    backdrop-filter: blur(2px);
+    width: 170px;
+    height: 48px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero-container .dashboard-img{
+    margin: 42px 0px 0px 0px;
+    z-index: 1;
+	position: relative;
+}
+
+
+/* BACKGROUND IMAGES */
+
+.hero-container .wave-svg{
+    position: absolute;
+    top: 414px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.eclips1{
+    position: absolute;
+    width: 582px;
+    height: 582px;
+    flex-shrink: 0;
+    border-radius: 582px;
+    background: rgba(123, 1, 167, 0.30);
+    filter: blur(100px);
+    top: -90px;
+    left: 726px;
+}
+
+.eclips2{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    border-radius: 454px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top: 262px;
+    left: -109px;
+}
+
+.eclips3{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    border-radius: 454px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top:850px;
+    left: 1180px;
+}
+
+.eclips4{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    border-radius: 454px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top:1247px;
+    left: -83px;
+}
+
+.eclips5{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    border-radius: 454px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top:1443px;
+    left: 422px;
+}
+
+.eclips6{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    border-radius: 454px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top:2094px;
+    left: 1058px;
+}
+
+.eclips7{
+    position: absolute;
+    width: 582px;
+    height: 582px;
+    border-radius: 582px;
+    background: rgba(123, 1, 167, 0.20);
+    filter: blur(100px);
+    top:2341px;
+    left: -141px;
+}
+
+
+.background1{
+    position:absolute;
+    background: linear-gradient(180deg, rgba(5, 5, 32, 0.00) 0%, #040833 100%);
+    width: 100%;
+    height: 343px;
+    top: 3327px;
+}
+
+/* Cards  */
+
+.cards{
+    margin: 108px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+}
+
+.card{
+    width: 259px;
+    height: 272px;
+    border-radius: 14px;
+    border: 0.536px solid rgba(0, 132, 255, 0.40);
+    background: rgba(102, 96, 160, 0.20);
+    backdrop-filter: blur(17.14285659790039px);
+}
+
+.card .svg{
+    margin: 32px 0px 0px 32px;
+    position: relative;
+}
+
+.card .svg .sndImg{
+    position: absolute;
+    margin: 10px -43px;
+}
+
+
+.card .card-heading{
+    margin: 12px 0px 0px 28px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card .card-text{
+    margin: 12px 0px 0px 28px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+/* services section */
+
+.services{
+    display: grid;
+    place-items: center;
+}
+
+.services .sevices-heading{
+    color: #0084FF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 120px 0px 0px 0px;
+}
+
+.services .sevices-heading .inner-text{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.services .services-smallText{
+    margin: 16px 0px 0px 0px;
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.services .service-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 41px 0px 0px 0px;
+    position: relative;
+    align-items: center;
+    width: 68.75rem;
+    height: 21.25rem;
+    border-radius: 40px;
+}
+
+.services .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 40px;
+    background: linear-gradient(270deg, #0D4376 0%, #0B1168 100%);
+    opacity: 0.3;
+    
+}
+
+.services .service-card .image{
+    margin: 30px 70px;
+    opacity: 1;
+    z-index: 1;
+    width: 375.658px;
+    height: 280px;
+}
+
+.services .service-card .text{
+    margin: 30px 70px 0px 0px;
+}
+
+.services .service-card .text .card-heading{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.9;
+}
+
+.services .service-card .text .card-text{
+    width: 463px;
+    opacity: 0.7;
+    margin: 12px 0px 0px 0px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.services .service-card .see-more-btn{
+    margin: 24px 0px 0px 0px;
+    display: flex;
+    height: 20px;
+    width: 107px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    opacity: 0.9
+}
+
+.services .service-card .see-more-btn .see-text{
+    color: #FFF;
+    text-align: right;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.services .service-card .see-more-btn img{
+    margin: 7px 0px 0px 0px;
+}
+
+.services .service-card2{
+    display: flex;
+    justify-content: space-between;
+    margin: 41px 0px 0px 0px;
+    position: relative;
+    align-items: center;
+    width: 68.75rem;
+    height: 21.25rem;
+    border-radius: 40px;
+}
+
+
+.services .service-card2 .text{
+    margin: 30px 0px 0px 70px;
+}
+
+.services .service-card2 .card-heading{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.services .service-card2 .card-text{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 464px;
+    margin: 12px 0px 0px 0px;
+    opacity: 0.7;
+}
+
+.services .service-card2 .image{
+    margin: 30px 70px 0px 0px;
+}
+
+.services .service-card2 .see-more-btn{
+    margin: 24px 0px 0px 0px;
+    display: flex;
+    height: 20px;
+    width: 107px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    opacity: 0.9
+}
+
+.services .service-card2 .see-more-btn .see-text{
+    color: #FFF;
+    text-align: right;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.services .service-card2 .see-more-btn img{
+    margin: 6px 0px 0px 0px;
+}
+
+.services .btn{
+    margin: 32px 0px 0px 0px;
+    width: 170px;
+    height: 48px;
+    border-radius: 4px;
+    border: 0.536px solid rgba(0, 132, 255, 0.40);
+    background: linear-gradient(180deg, rgba(102, 96, 160, 0.20) 0%, rgba(102, 96, 160, 0.00) 100%);
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+}
+
+.services .btn p{
+    color: #FFF;
+    width: 170px;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 14px 19px;
+}
+
+.line{
+    text-align:center;
+    margin: 75px 0px;
+}
+
+.company-heading-div{
+    text-align: center;
+}
+
+.company-heading-div .company-heading{
+    color: #0084FF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.company-heading-div .company-heading .inner-text{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.company-heading-div .company-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 16px 0px 0px 0px;
+}
+
+.company-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin: 63px auto;
+    max-width: 1126px;
+}
+
+.company-cards .card2{
+    width: 161px;
+    height: 103px;
+    border-radius: 4.286px;
+    background: linear-gradient(324deg, #0FD3FE 4.62%, #0E41ED 73.66%);
+    backdrop-filter: blur(2.142857074737549px);
+    padding: 30px 22px;
+}
+
+.company-cards .card1{
+    width: 161px;
+    height: 103px;
+    border-radius: 4px;
+    border: 0.536px solid rgba(0, 132, 255, 0.40);
+    background: rgba(102, 96, 160, 0.20);
+    backdrop-filter: blur(17.14285659790039px);
+    padding: 30px 22px;
+}
