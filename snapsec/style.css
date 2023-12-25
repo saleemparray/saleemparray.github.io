@@ -330,7 +330,8 @@ body{
 }
 
 .card .card-text{
-    margin: 12px 0px 0px 28px;
+    width: 203px;
+    margin: 12px 28px 35px 28px;
     color: rgba(255, 255, 255, 0.70);
     font-family: Plus Jakarta Sans;
     font-size: 14px;
@@ -619,4 +620,181 @@ body{
     background: rgba(102, 96, 160, 0.20);
     backdrop-filter: blur(17.14285659790039px);
     padding: 30px 22px;
+}
+
+.testimonials{
+    margin: 162px 0px 0px 0px;
+    text-align: center;
+}
+
+.testimonials .testimonials-heading{
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.testimonials .testimonials-heading .inner-text{
+    color: #0084FF;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.testimonials .testimonials-text{
+    margin: 16px 0px 0px 0px;
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.testimonial-cards{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 18px;
+    margin:  0px 0px 0px 153px;
+}
+
+.testimonial-cards .testimonial-card{
+    margin: 88px 0px 0px 0px;
+    width: 461px;
+    height: 297px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 0.3px solid #FFF;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(2px);
+}
+
+.testimonial-cards .testimonial-card .image{
+    width: 80px;
+    height: 80px;
+    margin: 26px 0px 0px 24px;
+}
+
+.testimonial-cards .testimonial-card .name{
+    color: #0084FF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 12px 0px 0px 24px;
+}
+
+.testimonial-cards .testimonial-card .role{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 8px 0px 0px 24px;
+    width: 412px;
+}
+
+.testimonial-cards .testimonial-card .detail{
+    width: 412px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 16px 0px 0px 24px;
+}
+
+.svg-container {
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 48px 0px 0px 0px;
+}
+
+.gradient-rect {
+    width: 43.8px;
+    height: 12px;
+    border-radius: 3.67421px;
+    background: linear-gradient(to right, #0FD3FE, #0E41ED);
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.solid-rect {
+    width: 12.6px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #373F7D;
+    display: inline-block;
+}
+
+.schudule-card{
+    margin: 56px auto;
+    width: 944px;
+    height: 261px;
+    border-radius: 16px;
+    background: linear-gradient(270deg, #180846 0%, #131157 100%);
+}
+
+.schudule-card .schudule-text{
+    width: 760px;
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 51px 52px;
+    margin: 0 auto;
+}
+
+.schudule-card .schudule-text .inner-text{
+    color: #0FD2FE;
+    font-family: Plus Jakarta Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.schudule-card .btn{
+    margin: 0 auto;
+    width: 170px;
+    height: 48px;
+    border-radius: 4px;
+    border: 0.536px solid rgba(0, 132, 255, 0.40);
+    background: linear-gradient(180deg, rgba(102, 96, 160, 0.20) 0%, rgba(102, 96, 160, 0.00) 100%);
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+}
+.schudule-card .btn .text{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin: 12px 0px;
+
+}
+
+.schudule-card .bg-img{
+    position: absolute;
+    width: 943.999px;
+    height: 185.927px;
+    margin: 38px 0px;
+
 }
