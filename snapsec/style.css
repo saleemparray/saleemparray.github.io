@@ -15,6 +15,16 @@ body{
 
 }
 
+
+@media screen and (min-width: 1400px) {
+    .hero-container .wave-svg img{
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 .desktop-nav{
     display: flex;
     justify-content: space-between;
@@ -90,9 +100,10 @@ body{
     width: 117px;
     height: 36px;
     border-radius: 4px;
-    border: 0.536px solid rgba(0, 132, 255, 0.40);
-    background: linear-gradient(180deg, rgba(102, 96, 160, 0.20) 0%, rgba(102, 96, 160, 0.00) 100%);
-    backdrop-filter: blur(2px);
+    background: linear-gradient(180deg, rgba(102, 96, 160, 0.2), rgba(102, 96, 160, 0));
+    backdrop-filter: blur(4px);
+    border: 0.5px solid rgba(0, 132, 255, 0.4);
+    box-sizing: border-box;
     color: #FFF;
     font-family: Plus Jakarta Sans;
     font-size: 14px;
@@ -168,14 +179,17 @@ body{
     font-weight: 700;
     line-height: normal;
     margin: 35px 0px 0px 0px;
+    z-index: 1;
+    cursor: pointer;
 }
 
-.hero-container .mid-Btn .btn{
+ .hero-container .mid-Btn .btn{
     margin: 38px 0px 0px 0px;
     border-radius: 4px;
-    border: 0.536px solid rgba(0, 132, 255, 0.40);
-    background: linear-gradient(180deg, rgba(102, 96, 160, 0.20) 0%, rgba(102, 96, 160, 0.00) 100%);
+    background: linear-gradient(180deg, rgba(102, 96, 160, 0.2), rgba(102, 96, 160, 0));
     backdrop-filter: blur(2px);
+    border: 0.5px solid rgba(0, 132, 255, 0.4);
+    box-sizing: border-box;
     width: 170px;
     height: 48px;
     color: #FFF;
@@ -184,7 +198,9 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
+    z-index: 1;
+    cursor: pointer;
+} 
 
 .hero-container .dashboard-img{
     margin: 42px 0px 0px 0px;
@@ -282,6 +298,28 @@ body{
     left: -141px;
 }
 
+.eclips8{
+    position: absolute;
+    border-radius: 582px;
+    background: rgba(123, 1, 167, 0.30);
+    filter: blur(100px);
+    width: 582px;
+    height: 582px;
+    flex-shrink: 0;
+    top:3727px;
+    left: -83px;
+}
+
+.eclips7{
+    position: absolute;
+    width: 582px;
+    height: 582px;
+    border-radius: 459px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top:3579px;
+    left:1039px;
+}
 
 .background1{
     position:absolute;
@@ -359,6 +397,7 @@ body{
     font-weight: 700;
     line-height: normal;
     margin: 120px 0px 0px 0px;
+    z-index: 1;
 }
 
 .services .sevices-heading .inner-text{
@@ -368,6 +407,7 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    opacity: 0.7;
 }
 
 
@@ -450,7 +490,7 @@ body{
     align-items: center;
     gap: 8px;
     cursor: pointer;
-    opacity: 0.9
+    opacity: 0.9;
 }
 
 .services .service-card .see-more-btn .see-text{
@@ -541,8 +581,9 @@ body{
     border-radius: 4px;
     border: 0.536px solid rgba(0, 132, 255, 0.40);
     background: linear-gradient(180deg, rgba(102, 96, 160, 0.20) 0%, rgba(102, 96, 160, 0.00) 100%);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
     cursor: pointer;
+    z-index: 1;
 }
 
 .services .btn p{
@@ -596,6 +637,7 @@ body{
 }
 
 .company-cards{
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -605,6 +647,7 @@ body{
 }
 
 .company-cards .card2{
+    cursor: pointer;
     width: 161px;
     height: 103px;
     border-radius: 4.286px;
@@ -614,6 +657,7 @@ body{
 }
 
 .company-cards .card1{
+    cursor: pointer;
     width: 161px;
     height: 103px;
     border-radius: 4px;
@@ -626,6 +670,7 @@ body{
 .testimonials{
     margin: 162px 0px 0px 0px;
     text-align: center;
+    position: relative;
 }
 
 .testimonials .testimonials-heading{
@@ -636,6 +681,7 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    z-index: 1;
 }
 
 .testimonials .testimonials-heading .inner-text{
@@ -751,6 +797,7 @@ body{
 }
 
 .schudule-card .schudule-text{
+    position: relative;
     width: 760px;
     color: #FFF;
     text-align: center;
@@ -761,6 +808,7 @@ body{
     line-height: normal;
     padding: 51px 52px;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .schudule-card .schudule-text .inner-text{
