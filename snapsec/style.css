@@ -15,16 +15,6 @@ body{
 
 }
 
-
-@media screen and (min-width: 1400px) {
-    .hero-container .wave-svg img{
-        position: absolute;
-        width: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
 .desktop-nav{
     display: flex;
     justify-content: space-between;
@@ -164,10 +154,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 31px;
+    gap: 50px;
 }
 
 .hero-container .mid-Btn .tutorial-btn{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,12 +169,36 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin: 35px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
     z-index: 1;
     cursor: pointer;
 }
+.hero-container .mid-Btn .tutorial-btn::before {
+    content: url('images/arrow.svg'); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 2px 0px 0px 70px;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
 
- .hero-container .mid-Btn .btn{
+.hero-container .mid-Btn .tutorial-btn:hover::before {
+    content: url('images/blue-arrow.svg'); 
+}
+
+.hero-container .mid-Btn .tutorial-btn:hover {
+    background: linear-gradient(90deg, #0E43EE 0%, #0FCCFE 116.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.8s ease;
+}
+
+.hero-container .mid-Btn .btn{
     margin: 38px 0px 0px 0px;
     border-radius: 4px;
     background: linear-gradient(180deg, rgba(102, 96, 160, 0.2), rgba(102, 96, 160, 0));
@@ -201,6 +216,28 @@ body{
     z-index: 1;
     cursor: pointer;
 } 
+
+
+.hero-container .mid-Btn .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgb(14, 65, 237) 0%, rgb(15, 208, 254) 100%);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.hero-container .mid-Btn .btn:hover::before {
+    opacity: 1;
+}
+
+.hero-container .mid-Btn .btn span {
+    position: relative;
+    z-index: 1;
+}
 
 .hero-container .dashboard-img{
     margin: 42px 0px 0px 0px;
@@ -586,15 +623,38 @@ body{
     z-index: 1;
 }
 
-.services .btn p{
+.services .btn span{
     color: #FFF;
     width: 170px;
     font-family: Plus Jakarta Sans;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin: 14px 19px;
+}
+
+
+.services .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgb(14, 65, 237) 0%, rgb(15, 208, 254) 100%);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.services .btn:hover::before {
+    opacity: 1;
+}
+
+.services .btn span {
+    position: relative;
+    z-index: 1;
 }
 
 .line{
@@ -928,4 +988,13 @@ footer .footer-logo-section .text{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+@media screen and (min-width: 1400px) {
+    .hero-container .wave-svg img{
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
