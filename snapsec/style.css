@@ -197,6 +197,7 @@ body{
 
 .hero-container .wave-svg{
     position: absolute;
+    width: 100%;
     top: 414px;
     left: 50%;
     transform: translateX(-50%);
@@ -740,11 +741,13 @@ body{
 }
 
 .schudule-card{
+    position: relative;
     margin: 56px auto;
     width: 944px;
     height: 261px;
     border-radius: 16px;
     background: linear-gradient(270deg, #180846 0%, #131157 100%);
+    z-index: 1;
 }
 
 .schudule-card .schudule-text{
@@ -796,5 +799,85 @@ body{
     width: 943.999px;
     height: 185.927px;
     margin: 38px 0px;
+}
 
+
+/* Footer */
+
+footer{
+    position: absolute;
+    justify-content: center;
+    height: 452px;
+    background: #04031B;
+    width: 100%;
+    margin: -150px 0px 0px 0px;
+}
+
+footer .footer{
+    display: flex;
+    padding: 204px 150px 0px 150px;
+    justify-content: space-between;
+}
+
+footer .footer-logo-section .name-logo{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+footer .footer-logo-section .name-logo .image{
+    width: 28.488px;
+    height: 32px;
+    margin: 0px 0px 0px 0px;
+}
+
+footer .footer-logo-section .name-logo .name{
+    color: #0084FF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+footer .footer-logo-section .text{
+    margin: 16px 0px 0px 0px;
+    width: 188px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 188px;
+}
+
+
+.footer .footer-content .name{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer .footer-content ul{
+    list-style: none;
+    margin-top: 12px;
+}
+
+.footer .footer-content ul li{
+    margin-top: 8px;
+    max-width: 180px;
+}
+
+.footer .footer-content ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
