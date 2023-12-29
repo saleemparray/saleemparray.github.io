@@ -1457,7 +1457,13 @@ footer .footer-logo-section .text{
     animation-delay: 500ms;
 }
 
-.hero-container .mid-Btn{
+.hero-container .mid-Btn .tutorial-btn{
+    animation: fadeIn 2000ms forwards;
+    opacity: 0;
+    animation-delay: 500ms;
+}
+
+.hero-container .mid-Btn .btn{
     animation: fadeIn 2000ms forwards;
     opacity: 0;
     animation-delay: 500ms;
