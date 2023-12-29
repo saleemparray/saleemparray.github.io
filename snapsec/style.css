@@ -225,6 +225,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 4px;
     background: linear-gradient(90deg, rgb(14, 65, 237) 0%, rgb(15, 208, 254) 100%);
     opacity: 0;
     transition: opacity 0.8s ease;
@@ -521,9 +522,10 @@ body{
     width: 259px;
     height: 272px;
     border-radius: 14px;
-    border: 0.536px solid rgba(0, 132, 255, 0.40);
     background: rgba(102, 96, 160, 0.20);
     backdrop-filter: blur(17.14285659790039px);
+    border: 0.536px solid transparent;
+    /* border-image: linear-gradient(45deg, #fff,blue)1; */
 }
 
 .card .svg{
@@ -1422,4 +1424,63 @@ footer .footer-logo-section .text{
     height: 32px;
     margin: 12px 0px 5px 0px;
     cursor: pointer;
+}
+
+
+/* Animations */
+
+.desktop-nav{
+    animation: fadeDown 3000ms forwards;
+    opacity: 0;
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.hero-container .main-text{
+    animation: fadeIn 2000ms forwards;
+    opacity: 0;
+    animation-delay: 500ms;
+}
+
+.hero-container .small-text{
+    animation: fadeIn 2000ms forwards;
+    opacity: 0;
+    animation-delay: 500ms;
+}
+
+.hero-container .mid-Btn{
+    animation: fadeIn 2000ms forwards;
+    opacity: 0;
+    animation-delay: 500ms;
+}
+
+@keyframes fadeIn {
+    100%{
+        opacity: 1;
+    }
+}
+
+.hero-container .dashboard-img{
+    animation: fadeUp 3000ms forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
