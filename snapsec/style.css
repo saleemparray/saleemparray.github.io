@@ -510,15 +510,20 @@ body{
 }
 
 /* Cards  */
-
 .cards{
     margin: 108px 400px 0px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 33px;  
+}
+
+.animate-card{
     display: flex;
     justify-content: center;
     gap: 33px;
 }
 
-.card{
+.animate-card .card{
     width: 259px;
     height: 272px;
     border-radius: 14px;
@@ -528,18 +533,18 @@ body{
     /* border-image: linear-gradient(45deg, #fff,blue)1; */
 }
 
-.card .svg{
+.animate-card .card .svg{
     margin: 32px 0px 0px 32px;
     position: relative;
 }
 
-.card .svg .sndImg{
+.animate-card .card .svg .sndImg{
     position: absolute;
     margin: 10px -43px;
 }
 
 
-.card .card-heading{
+.animate-card .card .card-heading{
     margin: 12px 0px 0px 28px;
     color: #FFF;
     font-family: Plus Jakarta Sans;
@@ -549,7 +554,7 @@ body{
     line-height: normal;
 }
 
-.card .card-text{
+.animate-card .card .card-text{
     width: 203px;
     margin: 12px 28px 35px 28px;
     color: rgba(255, 255, 255, 0.70);
@@ -575,7 +580,7 @@ body{
     font-family: Plus Jakarta Sans;
     font-size: 60px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     line-height: normal;
     margin: 120px 0px 0px 0px;
     z-index: 1;
@@ -586,9 +591,8 @@ body{
     font-family: Plus Jakarta Sans;
     font-size: 60px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     line-height: normal;
-    opacity: 0.7;
 }
 
 
@@ -1432,18 +1436,74 @@ footer .footer-logo-section .text{
 .desktop-nav{
     animation: fadeDown 3000ms forwards;
     opacity: 0;
+    position: relative;
+    z-index: 1;
 }
 
-@keyframes fadeDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+.services .sevices-heading{
+    animation: fadeDown 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
 }
+
+.services .services-smallText{
+    animation: fadeDown 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.services .service-card .image {
+    animation: fadeX 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.services .service-card .text{
+    animation: fadeY 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.services .service-card2 .image{
+    animation: fadeY 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.services .service-card2 .text{
+    animation: fadeX 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.services .btn{
+    animation: fadeUp 3000ms forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.company-heading-div{
+    animation: fadeDown 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    animation-delay: 1s;
+}
+
+.testimonials{
+    animation: fadeDown 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    animation-delay: 1s; 
+}
+
 
 .hero-container .main-text{
     animation: fadeIn 2000ms forwards;
@@ -1469,15 +1529,70 @@ footer .footer-logo-section .text{
     animation-delay: 500ms;
 }
 
+.hero-container .dashboard-img{
+    animation: fadeUp 3000ms forwards;
+    opacity: 0;
+}
+
+.testimonial-cards{
+    animation: fadeIn 3000ms forwards;
+    opacity: 0;
+}
+
+.schudule-card .schudule-text{
+    animation: fadeDown 3000ms forwards;
+    opacity: 0;
+}
+
+.schudule-card .btn{
+    animation: fadeUp 3000ms forwards;
+    opacity: 0;
+}
+
+footer{
+    animation: fadeUp 3000ms forwards;
+    opacity: 0  
+}
+@keyframes fadeX {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+
+@keyframes fadeY {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 @keyframes fadeIn {
     100%{
         opacity: 1;
     }
-}
-
-.hero-container .dashboard-img{
-    animation: fadeUp 3000ms forwards;
-    opacity: 0;
 }
 
 @keyframes fadeUp {
@@ -1490,3 +1605,18 @@ footer .footer-logo-section .text{
         transform: translateY(0px);
     }
 }
+
+/* .animate-card {
+    animation: slide 3000ms infinite linear;
+}
+
+@keyframes slide {
+    form {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-100px);
+    }
+} */
+
+
