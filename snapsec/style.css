@@ -596,6 +596,7 @@ body{
 .cards .animate-card {
     display: flex;
     gap: 33px;  
+    padding: 20px 0px;
 }
 
 .cards .animate-card {
@@ -631,11 +632,13 @@ body{
     height: 272px;
     border-radius: 14px;
     background:
-    linear-gradient(rgb(23 17 52), rgb(20, 13, 56)) padding-box,
+    linear-gradient(rgb(23 17 52), rgb(14 9 43)) padding-box,
     linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
     backdrop-filter: blur(17.14285659790039px);
     border: 2px solid rgba(102, 96, 160, 0.20);
+    transition: 0.1s;
 }
+
 
 .animate-card .card .svg{
     margin: 32px 0px 0px 32px;
