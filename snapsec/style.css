@@ -200,11 +200,10 @@ body{
 
 .hero-container .mid-Btn .btn{
     margin: 38px 0px 0px 0px;
-    border-radius: 4px;
-    background: linear-gradient(180deg, rgba(102, 96, 160, 0.2), rgba(102, 96, 160, 0));
+    background: linear-gradient(180deg, rgba(102, 96, 160, 0.20) 0%, rgba(102, 96, 160, 0.00) 100%);
     backdrop-filter: blur(2px);
-    border: 0.5px solid rgba(0, 132, 255, 0.4);
-    box-sizing: border-box;
+    border: 0.536px solid rgba(0, 132, 255, 0.40);
+    border-radius: 4px;
     width: 170px;
     height: 48px;
     color: #FFF;
@@ -226,13 +225,17 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 4px;
-    background: linear-gradient(90deg, rgb(14, 65, 237) 0%, rgb(15, 208, 254) 100%);
+    border: 0.536px solid transparent;
+    background: 
+    linear-gradient(90deg, rgb(14, 65, 237) 0%, rgb(15, 208, 254) 100%) padding-box,
+    linear-gradient(160deg, #0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
     opacity: 0;
     transition: opacity 0.8s ease;
 }
 
 .hero-container .mid-Btn .btn:hover::before {
     opacity: 1;
+  
 }
 
 .hero-container .mid-Btn .btn span {
@@ -245,7 +248,7 @@ body{
     z-index: 1;
 	position: relative;
     border-radius: 21.429px;
-    border: 0.536px solid rgba(0, 132, 255, 0.40);
+    border: 0.536px solid transparent;
     background: rgba(53, 45, 126, 0.2);
     backdrop-filter: blur(10px);
 }
@@ -611,6 +614,16 @@ body{
 .cards:hover .animate-card {
     animation-play-state: paused;
 }
+
+/* .animate-card .card{
+    width: 259px;
+    height: 272px;
+    border-radius: 14px;
+    background: linear-gradient(45deg, black,black) padding-box,
+    linear-gradient(45deg, #0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(17.14285659790039px);
+    border: 0.536px solid transparent;
+} */
 
 
 .animate-card .card{
@@ -1057,8 +1070,18 @@ body{
 }
 
 .upper-card .testimonial-cards{
-    animation: scroll 30s linear infinite;
+    animation: scrollX 30s linear infinite;
 }
+
+@keyframes scrollX {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100.7%);
+    }
+}
+
 
 .upper-card:hover .testimonial-cards{
     animation-play-state: paused;
