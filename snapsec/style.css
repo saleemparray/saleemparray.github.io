@@ -626,14 +626,15 @@ body{
 } */
 
 
-.animate-card .card{
+.animate-card .card {
     width: 259px;
     height: 272px;
     border-radius: 14px;
-    background: rgba(102, 96, 160, 0.20);
+    background:
+    linear-gradient(rgb(23 17 52), rgb(20, 13, 56)) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
     backdrop-filter: blur(17.14285659790039px);
-    border: 0.536px solid transparent;
-    /* border-image: linear-gradient(45deg, #fff,blue)1; */
+    border: 2px solid rgba(102, 96, 160, 0.20);
 }
 
 .animate-card .card .svg{
@@ -648,6 +649,8 @@ body{
 
 
 .animate-card .card .card-heading{
+    position: relative;
+    z-index: 1;
     margin: 12px 0px 0px 28px;
     color: #FFF;
     font-family: Plus Jakarta Sans;
@@ -658,6 +661,8 @@ body{
 }
 
 .animate-card .card .card-text{
+    position: relative;
+    z-index: 1;
     width: 203px;
     margin: 12px 28px 35px 28px;
     color: rgba(255, 255, 255, 0.70);
