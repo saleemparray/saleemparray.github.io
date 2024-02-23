@@ -1,1 +1,4143 @@
-s
+*{
+	padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: #01041C;
+    overflow-x: hidden;
+}
+
+.desktop{
+    background: #01041C;
+}
+
+.desktop-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Second Navbar In Hover */
+
+
+.service-hover-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-hover-nav .logo{
+    display: flex;
+    align-items: center;
+    margin: 16px 0px 0px 152px;
+    gap: 13.5px;
+}
+
+
+.service-hover-nav .logo .logo-text{
+    color: #0084FF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.service-hover-nav .main-manu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.service-hover-nav .main-manu li{
+    list-style: none;
+    margin: 23px 0px 0px 0px;
+}
+
+
+.service-hover-nav .main-manu li a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+}
+
+
+.service-hover-nav .main-manu li a.active{
+	color: #0084FF;
+	font-family: Plus Jakarta Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+
+.service-hover-nav .main-manu li a.active::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+	height: 2px;
+	background: #0084FF;
+	left: 0px;
+	bottom: -6px;
+}
+
+
+.service-hover-nav .btn{
+    width: 117px;
+    height: 36px;
+    border-radius: 4px;
+    background: 
+    linear-gradient(#161336, #1a182b) padding-box,
+    linear-gradient(160deg, #0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(4px);
+    border: 0.5px solid rgba(0, 132, 255, 0.089);
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 15px 152px 0px 0px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.service-hover{
+    position: fixed;
+    width: 100%;
+    height: 332px;
+    background: #01041C;
+    backdrop-filter: blur(20px);
+    z-index: 999;
+    margin-top: -52px;
+}
+
+.navbar-line{
+    width: 80%;
+    margin: 26px auto;
+    height: 1px;
+    opacity: 0.2;
+    background: #FFF;
+}
+
+.service-hover .hover-links{
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin: 20px auto;
+    padding: 0px 152px;
+}
+
+.service-hover .hover-links .link{
+    flex-basis: calc(33.3333% - 32px);
+    max-width: calc(33.3333% - 32px);
+    box-sizing: border-box;
+    display: flex;
+    gap:16px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.service-hover .hover-links .link a{
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.service-hover .hover-links .link .new-style{
+    color: #3561F6;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    align-items: center;
+}
+
+.service-hover .hover-links .link a:hover{
+    background: linear-gradient(90deg, #3561F6 1.1%, #0FD3FE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Products hover */
+
+
+.product-hover-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-hover-nav .logo{
+    display: flex;
+    align-items: center;
+    margin: 16px 0px 0px 152px;
+    gap: 13.5px;
+}
+
+
+.product-hover-nav  .logo .logo-text{
+    color: #0084FF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.product-hover-nav  .main-manu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.product-hover-nav .main-manu li{
+    list-style: none;
+    margin: 23px 0px 0px 0px;
+}
+
+.product-hover-nav  .main-manu li a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+}
+
+
+.product-hover-nav  .main-manu li a.active{
+	color: #0084FF;
+	font-family: Plus Jakarta Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+
+.product-hover-nav  .main-manu li a.active::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+	height: 2px;
+	background: #0084FF;
+	left: 0px;
+	bottom: -6px;
+}
+
+
+.product-hover-nav  .btn{
+    width: 117px;
+    height: 36px;
+    border-radius: 4px;
+    background: 
+    linear-gradient(#161336, #1a182b) padding-box,
+    linear-gradient(160deg, #0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(4px);
+    border: 0.5px solid rgba(0, 132, 255, 0.089);
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 15px 152px 0px 0px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.Product-hover{
+    position: fixed;
+    width: 100%;
+    height: 332px;
+    background: #01041C;
+    backdrop-filter: blur(20px);
+    z-index: 999;
+    margin-top: -52px;
+}
+
+.Product-hover .navbar-line{
+    width: 80%;
+    margin: 26px auto;
+    height: 1px;
+    opacity: 0.2;
+    background: #FFF;
+}
+
+.Product-hover .hover-links{
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin: 20px auto;
+    padding: 0px 152px;
+}
+
+.Product-hover .hover-links .link{
+    flex-basis: calc(33.3333% - 32px);
+    max-width: calc(33.3333% - 32px);
+    box-sizing: border-box;
+    display: flex;
+    gap:16px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.Product-hover .hover-links .link a{
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.Product-hover .hover-links .link .new-style{
+    color: #3561F6;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    align-items: center;
+}
+
+.Product-hover .hover-links .link a:hover{
+    background: linear-gradient(90deg, #3561F6 1.1%, #0FD3FE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Popup tap */
+
+
+.popup{
+    position: fixed;
+    background: rgba(3, 5, 34, 0.30);
+    backdrop-filter: blur(17.5px);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    margin: 0 auto;
+    margin-top: -55px;
+}
+
+.popup .popup-inside{
+    width: 728px;
+    height: 490px;
+    flex-shrink: 0;
+    border-radius:4px;
+    background:rgb(56 49 117);
+    backdrop-filter: blur(17.14285659790039px);
+    margin: 100px auto;
+    padding: 24px;
+}
+
+.popup .popup-inside .popup-deep{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.20);
+    margin:0 auto ;
+    padding: 24px 24px;
+    position: relative;
+}
+
+
+.popup .popup-inside .popup-deep .svg-x{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.popup .popup-inside .popup-deep .svg{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.popup .popup-inside .popup-deep h1{
+    margin-top: 40px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.popup .popup-inside .popup-deep .inner-text{
+    background: linear-gradient(90deg, #0084FF 63.62%, #0FD3FE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Plus Jakarta Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.popup .popup-inside .popup-deep p{
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.7;
+    margin-top: 12px;
+}
+
+.popup .popup-inside .popup-deep input{
+    width: 80%;
+    height: 36px;
+    border-radius: 4px;
+    border: 0.536px solid rgba(255, 255, 255, 0.46);
+    backdrop-filter: blur(17.14285659790039px);
+    margin: 24px auto;
+    background-color: transparent;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    padding: 14px 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.popup .popup-inside .popup-deep button{
+    width: 145px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: linear-gradient(96deg, #3561F6 0%, #0FD3FE 100%);
+    backdrop-filter: blur(2px);
+    color: #FFF;
+    border: 1px solid transparent;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.popup .popup-inside .popup-deep .btn{
+    display: flex ;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop Logo styling*/
+
+.desktop-nav .logo{
+    display: flex;
+    align-items: center;
+    margin: 16px 0px 0px 152px;
+    gap: 13.5px;
+}
+
+.desktop-nav .logo .logo-text{
+    color: #0084FF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Desktop Manu styling*/
+
+.desktop-nav .main-manu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.desktop-nav .main-manu li{
+    list-style: none;
+    margin: 23px 0px 0px 0px;
+}
+
+.desktop-nav .main-manu li a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+}
+
+.desktop-nav .main-manu li a:hover{
+    color: #3561F6;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.desktop-nav .main-manu li a.active{
+	color: #0084FF;
+	font-family: Plus Jakarta Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.desktop-nav .main-manu li a.active::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+	height: 2px;
+	background: #0084FF;
+	left: 0px;
+	bottom: -6px;
+}
+
+/* Desktop Navbar Get Started Button styling*/
+
+.desktop-nav .btn{
+    width: 117px;
+    height: 36px;
+    border-radius: 4px;
+    background: 
+    linear-gradient(#161336, #1a182b) padding-box,
+    linear-gradient(160deg, #0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(4px);
+    border: 0.5px solid rgba(0, 132, 255, 0.089);
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 15px 152px 0px 0px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Desktop Middle text styling*/
+
+.hero-container{
+  text-align: center;
+}
+
+.hero-container .main-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 123px 0px 0px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-container .main-text .inner-text{
+    background: linear-gradient(268deg, #0FD3FE 8.33%, #0E41ED 66.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.hero-container .small-text{
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.40);
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 16px 0px 0px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-container .mid-Btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-container .mid-Btn .tutorial-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 40px 0px 0px 0px;
+    z-index: 1;
+    cursor: pointer;
+}
+.hero-container .mid-Btn .tutorial-btn::before {
+    content:""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 1px 0px 0px 60px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.hero-container .mid-Btn .tutorial-btn:hover::before {
+    content: url('images/blue-arrow.svg'); 
+    opacity: 1;
+}
+
+.hero-container .mid-Btn .tutorial-btn:hover{
+    background: linear-gradient(90deg, #0E43EE 0%, #0FCCFE 116.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+}
+
+.hero-container .mid-Btn .btn{
+    margin: 38px 0px 0px 0px;
+    background: linear-gradient(180deg, rgba(102, 96, 160, 0.20) 0%, rgba(102, 96, 160, 0.00) 100%);
+    backdrop-filter: blur(2px);
+    border: 0.536px solid rgba(0, 132, 255, 0.40);
+    border-radius: 4px;
+    width: 170px;
+    height: 48px;
+    position: relative;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 1;
+    cursor: pointer;
+} 
+
+
+.hero-container .mid-Btn .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 0.536px solid transparent;
+    background: 
+    linear-gradient(90deg, rgb(14, 65, 237) 0%, rgb(15, 208, 254) 100%) padding-box,
+    linear-gradient(160deg, #0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.hero-container .mid-Btn .btn:hover::before {
+    opacity: 1;
+}
+
+.hero-container .mid-Btn .btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-container .dashboard-img{
+    margin: 42px 0px 0px 0px;
+    z-index: 1;
+	position: relative;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background:
+        linear-gradient(rgb(23 17 52), rgb(14 9 43)) padding-box,
+        linear-gradient(120deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(10px);
+}
+
+.product-img{
+    margin: 42px auto;
+    z-index: 1;
+	position: relative;
+    border-radius: 21.429px;
+    border: 1px solid transparent;
+    background:
+        linear-gradient(rgb(23 17 52), rgb(14 9 43)) padding-box,
+        linear-gradient(120deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(10px);
+    padding: 10px 80px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.hero-container .profile-img{
+    margin: 19px 0px 0px 0px;
+}
+
+.hero-container .profile-img .profile-text-img{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    z-index: 1;
+    align-items: center;
+}
+
+.href-tag{
+    text-decoration: none;
+}
+
+.hero-container .profile-img .profile-text-img .profiles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60px;
+  }
+  
+  .hero-container .profile-img .profile-text-img .profiles img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .hero-container .profile-img .profile-text-img .profiles img:nth-child(2) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .hero-container .profile-img .profile-text-img .profiles img:nth-child(3) {
+    top: 0;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  
+
+.hero-container .profile-img .text{
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.40);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero-container .profile-img .text .num{
+    color: #0084FF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+/* BACKGROUND IMAGES */
+
+/* Index page background images */
+
+.hero-container .wave-svg{
+    position: absolute;
+    width: 100%;
+    top: 414px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.eclips1{
+    position: absolute;
+    width: 582px;
+    height: 582px;
+    flex-shrink: 0;
+    border-radius: 582px;
+    background: rgba(123, 1, 167, 0.30);
+    filter: blur(100px);
+    top: -90px;
+    left: 850px;
+}
+
+.eclips2{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    border-radius: 454px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top: 262px;
+    left: -250px;
+}
+
+.eclips3{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    border-radius: 454px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top:850px;
+    left: 1180px;
+    z-index: 1;
+}
+
+.eclips4{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    border-radius: 454px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top:1247px;
+    left: -83px;
+}
+
+.eclips5{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    border-radius: 454px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top:1443px;
+    left: 422px;
+}
+
+.eclips6{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    border-radius: 454px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top:2094px;
+    left: 1058px;
+}
+
+.eclips7{
+    position: absolute;
+    width: 582px;
+    height: 582px;
+    border-radius: 582px;
+    background: rgba(123, 1, 167, 0.20);
+    filter: blur(100px);
+    top:2341px;
+    left: -141px;
+}
+
+.eclips8{
+    position: absolute;
+    border-radius: 582px;
+    background: rgba(123, 1, 167, 0.30);
+    filter: blur(100px);
+    width: 582px;
+    height: 582px;
+    flex-shrink: 0;
+    top:3727px;
+    left: -83px;
+}
+
+.eclips9{
+    position: absolute;
+    border-radius: 459px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    width: 459px;
+    height: 459px;
+    flex-shrink: 0;
+    top:4390px;
+    left: -83px;
+}
+
+.eclips10{
+    position: absolute;
+    width: 582px;
+    height: 582px;
+    flex-shrink: 0;
+    border-radius: 582px;
+    background: rgba(123, 1, 167, 0.30);
+    filter: blur(100px);
+    top:4784px;
+    left: 916px;
+}
+
+
+.eclips7{
+    position: absolute;
+    width: 582px;
+    height: 582px;
+    border-radius: 459px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top:3579px;
+    left:1039px;
+}
+
+.square{
+    position: relative;
+    justify-content: center;
+    left: 1475px; 
+    top: -100px;
+}
+
+.circle{
+    position: relative;
+    left: 130px;
+    top: 160px;
+}
+
+
+.background1{
+    position:absolute;
+    background: linear-gradient(180deg, rgba(5, 5, 32, 0.00) 0%, #040833 100%);
+    width: 100%;
+    height: 343px;
+    top: 3750px;
+}
+
+.ellipse-blog{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    flex-shrink: 0;
+    border-radius: 454px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top: 1247px;
+    left: 1091px;
+}
+
+.product-eclips1{
+    position: absolute;
+    width: 582px;
+    height: 582px;
+    border-radius: 582px;
+    background: rgba(123, 1, 167, 0.30);
+    filter: blur(100px);
+    margin: 900px -100px;
+}
+
+.product-eclips2{
+    position: absolute;
+    border-radius: 459px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    width: 459px;
+    height: 459px;
+    flex-shrink: 0;
+    margin:1400px 1038px ;
+}
+
+.product-eclips3{
+    position: absolute;
+    width: 313px;
+    height: 313px;
+    flex-shrink: 0;
+    border-radius: 313px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    margin:2100px 40px;
+}
+
+
+.product-eclips4{
+    position: absolute;
+    width: 582px;
+    height: 582px;
+    border-radius: 582px;
+    background: rgba(123, 1, 167, 0.30);
+    filter: blur(100px);
+    margin:2300px 719px;
+}
+
+/* services pages background images */
+
+.service-eclips4{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    border-radius: 454px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top:1700px;
+    left: -83px; 
+}
+
+.service-eclips5{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    border-radius: 525px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top:2400px;
+    left: 1058px; 
+}
+
+.service-eclips6{
+    position: absolute;
+    width: 454px;
+    height: 454px;
+    border-radius: 525px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    top:3150px;
+    left: -83px; 
+}
+
+.service-eclips7{
+    position: absolute;
+    width: 582px;
+    height: 582px;
+    flex-shrink: 0;
+    border-radius: 582px;
+    background: rgba(123, 1, 167, 0.30);
+    filter: blur(100px);
+    top:3500px;
+    left: 1118px; 
+}
+
+/* Cards  */
+.cards {
+    margin: 108px auto;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+    gap: 33px;
+    z-index: 1;
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
+}
+
+.cards .animate-card {
+    display: flex;
+    gap: 33px;  
+    padding: 20px 0px;
+}
+
+.cards .animate-card {
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-102%);
+    }
+}
+
+.cards:hover .animate-card {
+    animation-play-state: paused;
+}
+
+.animate-card .card {
+    width: 259px;
+    height: 280px;
+    border-radius: 14px;
+    background:
+    linear-gradient(rgb(23 17 52), rgb(14 9 43)) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(17.14285659790039px);
+    border: 2px solid transparent;
+    transition: 0.1s;
+    padding: 30px 28px;
+}
+
+
+.animate-card .card .svg{
+    position: relative;
+}
+
+.animate-card .card .svg .sndImg{
+    position: absolute;
+    margin: 10px -43px;
+}
+
+
+.animate-card .card .card-heading{
+    position: relative;
+    z-index: 1;
+    margin: 12px 0px 0px 0px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.animate-card .card .card-text{
+    position: relative;
+    z-index: 1;
+    width: 203px;
+    margin: 12px 0px 12px 0px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/* services section */
+
+.services{
+    display: grid;
+    place-items: center;
+}
+
+.services .sevices-heading{
+    color: #0084FF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 10px 0px 0px 0px;
+    z-index: 1;
+}
+
+.services .sevices-heading .inner-text{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+.services .services-smallText{
+    margin: 16px 0px 0px 0px;
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.services .service-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 41px 0px 0px 0px;
+    position: relative;
+    align-items: center;
+    width: 68.75rem;
+    height: 21.25rem;
+    border-radius: 40px;
+}
+
+.services .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 40px;
+    background: linear-gradient(270deg, #0D4376 0%, #0B1168 100%);
+    opacity: 0.3;
+    
+}
+
+.services .service-card .image{
+    margin: 30px 70px;
+    opacity: 1;
+    z-index: 1;
+    width: 375.658px;
+    height: 280px;
+}
+
+.services .service-card .text{
+    margin: 30px 70px 0px 0px;
+}
+
+.services .service-card .text .card-heading{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.9;
+}
+
+.services .service-card .text .card-text{
+    width: 463px;
+    opacity: 0.7;
+    margin: 12px 0px 0px 0px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.services .service-card .see-more-btn{
+    margin: 24px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.services .service-card .see-more-btn .see-text{
+    color: #FFF;
+    text-align: right;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.services .service-card .see-more-btn img{
+    margin: 3px 0px 0px 0px;
+}
+
+.services .service-card2{
+    display: flex;
+    justify-content: space-between;
+    margin: 41px 0px 0px 0px;
+    position: relative;
+    align-items: center;
+    width: 68.75rem;
+    height: 21.25rem;
+    border-radius: 40px;
+}
+
+
+.services .service-card2 .text{
+    margin: 30px 0px 0px 70px;
+}
+
+.services .service-card2 .card-heading{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.services .service-card2 .card-text{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 464px;
+    margin: 12px 0px 0px 0px;
+    opacity: 0.7;
+}
+
+.services .service-card2 .image{
+    margin: 30px 70px 0px 0px;
+}
+
+.services .service-card2 .see-more-btn{
+    margin: 24px 0px 0px 0px;
+    display: flex;
+    height: 20px;
+    width: 107px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    opacity: 0.9
+}
+
+.services .service-card2 .see-more-btn .see-text{
+    color: #FFF;
+    text-align: right;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.services .service-card2 .see-more-btn img{
+    margin: 6px 0px 0px 0px;
+}
+
+.services .btn{
+    margin: 32px 0px 0px 0px;
+    width: 170px;
+    height: 48px;
+    border-radius: 4px;
+    border: 0.536px solid transparent;
+    background:
+    linear-gradient(rgb(23 17 52), rgb(14 9 43)) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.services .btn span{
+    color: #FFF;
+    width: 170px;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 14px 19px;
+}
+
+
+.services .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(14, 65, 237) 0%, rgb(15, 208, 254) 100%);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.services .btn:hover::before {
+    opacity: 1;
+}
+
+.services .btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.line{
+    text-align:center;
+    margin: 75px 0px;
+}
+
+.company-heading-div{
+    text-align: center;
+}
+
+.company-heading-div .company-heading{
+    color: #0084FF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.company-heading-div .company-heading .inner-text{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.company-heading-div .company-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 16px 0px 0px 0px;
+}
+
+.company-cards{
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin: 63px auto;
+    max-width: 1126px;
+}
+
+.company-cards .card1{
+    cursor: pointer;
+    width: 161px;
+    height: 103px;
+    border-radius: 4px;
+    border: 0.536px solid transparent;
+    background:
+    linear-gradient( #040833,  #040833) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(17.14285659790039px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-cards .card1 svg{
+    position:relative;
+    z-index: 1;
+}
+
+.company-cards .card1:hover{
+    cursor: pointer;
+    width: 161px;
+    height: 103px;
+    border-radius: 4.286px;
+    backdrop-filter: blur(2.142857074737549px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.company-cards .card1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(324deg, #0FD3FE 4.62%, #0E41ED 73.66%);
+    opacity: 0;
+    border-radius: inherit;
+    transition: opacity 0.8s ease; /* Transition on opacity */
+}
+
+.company-cards .card1:hover::before {
+    opacity: 1; /* Fully visible on hover */
+
+}
+
+.testimonials{
+    margin: 100px 0px 0px 0px;
+    text-align: center;
+    position: relative;
+}
+
+.testimonials .testimonials-heading{
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 1;
+}
+
+.testimonials .testimonials-heading .inner-text{
+    background: linear-gradient(268deg, #0FD3FE 8.33%, #0E41ED 66.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.testimonials .testimonials-text{
+    margin: 16px 0px 0px 0px;
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.upper-card{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    width: 95%;
+    overflow: hidden;
+    margin:20px auto;
+    gap: 18px;
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
+}
+
+.upper-card .testimonial-cards{
+    display: flex;
+    gap: 18px;
+}
+
+.upper-card .testimonial-cards{
+    animation: scrollX 30s linear infinite;
+}
+
+@keyframes scrollX {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100.7%);
+    }
+}
+
+
+.upper-card:hover .testimonial-cards{
+    animation-play-state: paused;
+}
+
+.testimonial-cards .btn-class{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    width: 95%;
+    margin-top: 230px;  
+    height: 200px;
+}
+
+.testimonial-cards .btn-class .pre-btn{
+    color: white;
+    margin-left: -20px;
+
+}
+
+.testimonial-cards .btn-class .nxt-btn{
+    color: white;
+    margin-right: -20px;
+}
+
+/* .testimonial-cards .colors{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.testimonial-cards .colors .first{
+    margin-top: 86px;
+    position: absolute;
+    width: 20px;
+    height: 300px;
+    background: linear-gradient(to right, #0FD3FE, #0E41ED);
+}
+
+.testimonial-cards .colors .second{
+    margin-top: 86px;
+    position: relative;
+    width: 20px;
+    height: 300px;
+    background: linear-gradient(to right, #0FD3FE, #0E41ED);
+} */
+
+.testimonial-cards .testimonial-card{
+    position: relative;
+    z-index: 1;
+    margin: 88px 0px 0px 0px;
+    width: 461px;
+    height: 310px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 0.3px solid transparent;
+    background:
+    linear-gradient( 97deg, rgb(31, 53, 114) 0%, rgb(34, 17, 69) 100%) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(2px);
+    padding: 0px 0px 10px 0px;
+}
+
+.card-upper{
+    position: relative;
+    margin: 0px 0px 60px 0px;
+}
+
+.card-upper::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 4px;
+    background: linear-gradient(97deg, rgba(52, 107, 255, 0.50) 0%, rgba(54, 1, 167, 0.50) 100%);
+    filter: blur(38px);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.card-upper:hover::before {
+    opacity: 1;
+}
+
+.testimonial-cards .testimonial-card .image{
+    width: 80px;
+    height: 80px;
+    margin: 26px 0px 0px 24px;
+    border-radius: 100px;
+}
+
+.testimonial-cards .testimonial-card .name{
+    color: #0084FF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 12px 0px 0px 24px;
+}
+
+.testimonial-cards .testimonial-card .role{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 8px 0px 0px 24px;
+    width: 412px;
+}
+
+.testimonial-cards .testimonial-card .detail{
+    width: 412px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 16px 0px 0px 24px;
+}
+
+.svg-container {
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 48px 0px 0px 0px;
+}
+
+.gradient-rect {
+    width: 43.8px;
+    height: 12px;
+    border-radius: 3.67421px;
+    background: linear-gradient(to right, #0FD3FE, #0E41ED);
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.solid-rect {
+    width: 12.6px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #373F7D;
+    display: inline-block;
+}
+
+.product-new-outer{
+    display: flex;
+    margin: 32px auto;
+    gap: 34px;
+    width: 95%;
+    overflow-x: auto;
+    padding: 0px 0px 10px 0px;
+}
+
+.product-new-outer::-webkit-scrollbar {
+    width: 0px; 
+    /* height: 5px; */
+}
+
+/* .product-new-outer::-webkit-scrollbar-thumb {
+    background:linear-gradient(268deg, #0FD3FE 8.33%, #0E41ED 66.28%);
+    border-radius: 35%;
+}
+
+.product-new-outer::-webkit-scrollbar-track {
+    background:linear-gradient(270deg, rgba(13, 67, 118, 0.3) 0%, rgba(11, 17, 104, 0.3) 100%);
+} */
+
+.product-card-animate{
+    display: flex;
+    margin: 32px auto;
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+    gap: 33px;
+    z-index: 1;
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
+}
+
+
+.product-new-outer .product-new-card {
+    width: 259px;
+    height: 556px;
+    border-radius: 16px;
+    background: linear-gradient(270deg, rgba(13, 67, 118, 0.3) 0%, rgba(11, 17, 104, 0.3) 100%);
+    padding: 24px;
+}
+
+.product-new-outer .product-new-card .product-img{
+    width: 211px;
+    height: 268px;
+    margin: 0 auto;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(17.14285659790039px);
+    padding: 48px 19px;
+    opacity: 1;
+}
+
+.product-new-outer .product-new-card .product-img img{
+    opacity: 1;
+}
+
+.product-new-outer .product-new-card .product-text h3{
+    margin-top: 14px;
+    color: #0084FF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 1;
+}
+
+.product-new-outer .product-new-card .product-text p{
+    width: 211px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 8px;
+    opacity: 1;
+}
+
+.product-new-outer .product-new-card .product-btn{
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+}
+
+.product-new-outer .product-new-card .product-btn button{
+    margin-top: 73px;
+    width: 211px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    opacity: 0.7;
+    background: linear-gradient(270deg, rgb(4 28 52) 0%, rgb(0 4 68) 100%) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+}
+
+.product-new-outer .product-new-card .product-btn button:hover::before{
+    opacity: 1;
+}
+
+.product-new-outer .product-new-card .product-btn button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4.286px;
+    background: linear-gradient(324deg, #0FD3FE 4.62%, #0E41ED 73.66%);
+    backdrop-filter: blur(2.142857074737549px);
+    color: #FFF;
+    opacity: 0;
+    border-radius: inherit;
+    transition: opacity 0.8s ease;
+}
+
+.product-new-card .product-btn .btn span{
+    color: #FFF;
+    width: 170px;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 14px 19px;
+}
+
+.schudule-card{
+    position: relative;
+    margin: 56px auto;
+    width: 944px;
+    height: 261px;
+    border-radius: 16px;
+    background: linear-gradient(270deg, #180846 0%, #131157 100%);
+    z-index: 1;
+}
+
+.schudule-card .schudule-text{
+    position: relative;
+    width: 760px;
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 51px 52px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.schudule-card .schudule-text .inner-text{
+    color: #0FD2FE;
+    font-family: Plus Jakarta Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.schudule-card .btn{
+    text-decoration: none;
+    margin: 0 auto;
+    width: 170px;
+    height: 48px;
+    border-radius: 4px;
+    border: 0.536px solid transparent;
+    background:
+    linear-gradient( 97deg, rgb(31, 53, 114) 0%, rgb(34, 17, 69) 100%) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+}
+.schudule-card .btn .text{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin: 12px 0px;
+
+}
+
+.schudule-card .bg-img{
+    position: absolute;
+    width: 943.999px;
+    height: 185.927px;
+    margin: 38px 0px;
+}
+
+
+
+/* Comming soon page */
+
+.comming-soon{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0px;
+}
+
+.comming-soon .comming-soon-text h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+}
+
+.comming-soon .comming-soon-text .inner-text{
+    background: linear-gradient(268deg, #0FD3FE 8.33%, #0E41ED 66.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.comming-soon .comming-soon-text P{
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+}
+
+.subscribe{
+    margin: 40px auto;
+    width: 550px;
+}
+
+.subscribe div p{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.subscribe .subscribe-input{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    gap: 17px;
+}
+
+.subscribe .subscribe-input input{
+    width: 350px;
+    height: 42px;
+    border-radius: 4px;
+    border: 0.536px solid rgba(255, 255, 255, 0.46);
+    backdrop-filter: blur(17.14285659790039px);
+    margin: 8px 0px 0px 0px;
+    background-color: transparent;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    padding: 14px 14px;
+}
+
+.subscribe .subscribe-input button{
+    padding: 0px 30px;
+    height: 44px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background:
+    linear-gradient( 97deg, rgb(12 24 58) 0%, rgb(16 14 64) 100%) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(2px);
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 5px 0px 0px 0px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+
+}
+
+.subscribe .subscribe-input button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 0.536px solid transparent;
+    background:linear-gradient(90deg, rgb(14, 65, 237) 0%, rgb(15, 208, 254) 100%);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    z-index: -1;
+}
+
+
+.subscribe .subscribe-input button:hover::before {
+    opacity: 1;
+}
+
+
+/* Footer */
+
+footer{
+    position: absolute;
+    justify-content: center;
+    background: #04031B;
+    width: 100%;
+    margin: -150px 0px 0px 0px;
+}
+
+footer .footer{
+    display: flex;
+    padding: 204px 150px 0px 150px;
+    justify-content: space-between;
+}
+
+footer .footer-logo-section .name-logo{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+footer .footer-logo-section .name-logo .image{
+    width: 28.488px;
+    height: 32px;
+    margin: 0px 0px 0px 0px;
+}
+
+footer .footer-logo-section .name-logo .name{
+    color: #0084FF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+footer .footer-logo-section .text{
+    margin: 16px 0px 0px 0px;
+    width: 188px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 188px;
+}
+
+
+.footer .footer-content .name{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer .footer-content ul{
+    list-style: none;
+    margin-top: 12px;
+}
+
+.footer .footer-content ul li{
+    margin-top: 8px;
+    max-width: 180px;
+}
+
+.footer .footer-content ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (min-width: 1400px) {
+    .hero-container .wave-svg img{
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+}
+
+
+
+
+/* Contact Us page  */
+
+/* Bckground image */
+
+.ellipse-contact{
+    position: absolute;
+    width: 526px;
+    height: 526px;
+    border-radius: 526px;
+    background: rgba(54, 1, 167, 0.30);
+    filter: blur(100px);
+    margin: 400px 0px 0px -88px;
+}
+
+.contact-card{
+    width: 942px;
+    height: 632px;
+    border-radius: 14px;
+    border: 1px solid transparent;
+    background:
+    linear-gradient( 97deg, rgb(12 24 58) 0%, rgb(16 14 64) 100%) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(17.14285659790039px);
+    margin: 0 auto;
+    padding: 32px 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-card .text{
+    text-align: left;
+}
+
+.contact-card .text h3{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contact-card .text p{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 16px 0px 0px 0px;
+}
+
+.contact-card label p{
+    margin: 24px 0px 0px 0px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contact-card label input{
+    width: 878px;
+    height: 42px;
+    border-radius: 4px;
+    border: 0.536px solid rgba(255, 255, 255, 0.46);
+    backdrop-filter: blur(17.14285659790039px);
+    margin: 8px 0px 0px 0px;
+    background-color: transparent;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    padding: 14px 14px;
+}
+
+.contact-card label textarea{
+    margin: 8px 0px 0px 0px;
+    width: 878px;
+    height: 140px;
+    border-radius: 4px;
+    border: 0.536px solid rgba(255, 255, 255, 0.46);
+    backdrop-filter: blur(17.14285659790039px);
+    background-color: transparent;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    padding: 14px 14px;
+}
+
+
+.contact-card .contact-btns{
+    display: flex;
+    justify-content: right;
+    gap: 17px;
+    margin: 36px 0px 0px 0px;
+}
+
+.contact-card .contact-btns button{
+    padding: 0px 30px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background:
+    linear-gradient( 97deg, rgb(12 24 58) 0%, rgb(16 14 64) 100%) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(2px);
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+}
+
+.contact-card button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background:linear-gradient(90deg, rgb(14, 65, 237) 0%, rgb(15, 208, 254) 100%);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    z-index: -1;
+}
+
+.contact-card button:hover::before {
+    opacity: 1;
+}
+
+.social-media{
+    position: relative;
+    margin: 48px 0px 0px 0px;
+    text-align: center;
+    z-index: 1;
+}
+
+.social-media svg:hover path{
+    fill: #0084FF;
+    stroke: #0084FF;
+    fill-opacity:0.9 !important ;
+    stroke-width:0.3; 
+    transition: 0.8s;
+}
+
+.social-media p{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.social-media .links{
+    margin: 24px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+
+/* Blogs Stylings */
+
+.blog-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+}
+
+.blog-buttons button{
+    padding:  9px 22px;
+    border-radius: 40px;
+    border: 0.536px solid rgba(255, 255, 255, 0.46);
+    backdrop-filter: blur(17.14285659790039px);
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.40);
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.blog-buttons .active{
+    border-radius: 40px;
+    border: 0.536px solid rgba(0, 132, 255, 0.40);
+    background: linear-gradient(180deg, rgba(102, 96, 160, 0.20) 0%, rgba(102, 96, 160, 0.00) 100%);
+    backdrop-filter: blur(2px);
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.40);
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.blog{
+    margin: 66px auto;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    max-width: 1140px;
+}
+
+.blog-cards{
+    width: 556px;
+    height: 380px;
+    flex-shrink: 0;
+    border-radius: 21.429px;
+    border: 1px solid transparent;
+    background:
+    linear-gradient( 97deg, rgb(31, 53, 114) 0%, rgb(34, 17, 69) 100%) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(17.14285659790039px);
+    padding: 24px 24px;
+}
+
+.blog-cards .background-img{
+    width: 100%;
+    height: 208px;
+    border-radius: 8px;
+    background: #004AAD;
+    padding: 25px 44px;
+}
+
+.blog-cards .middle-card{
+    width: 491px;
+    margin: 12px 0px 0px 0px;
+}
+
+.blog-cards .middle-card h3{
+    color: #0084FF;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.blog-cards .middle-card p{
+    margin: 8px 0px 0px 0px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.blog-cards .middle-card p .read-more{
+    opacity: 0.7;
+    color: #0084FF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.blog-cards .last-card{
+    display: flex;
+    justify-content: space-between;
+    margin: 24px -12px;
+}
+
+.blog-cards .last-card .profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.blog-cards .last-card .profile img{
+    width: 49px;
+    height: 49px;
+    border-radius: 49px;
+}
+
+.blog-cards .last-card .profile .name-date h4{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.blog-cards .last-card .profile .name-date p{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.blog-cards .last-card .save-btn{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 12px 0px 5px 0px;
+    cursor: pointer;
+}
+
+
+/* pagination */
+
+.pagination{
+    height: 60px;
+    background: rgba(1, 4, 28, 0.00);
+    display: flex;
+    gap: 10px;
+    padding: 10px 10px;
+    justify-content: center;
+}
+
+.pagination .pre-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(102, 96, 160, 0.20);
+    backdrop-filter: blur(26.830238342285156px);
+    padding: 8px 8px;
+    cursor: pointer;
+}
+
+.pagination .nxt-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(102, 96, 160, 0.20);
+    backdrop-filter: blur(26.830238342285156px);
+    padding: 8px 8px;
+    cursor: pointer;
+}
+
+.pagination .middle-page{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: rgba(102, 96, 160, 0.20);
+    backdrop-filter: blur(26.830238342285156px);
+    padding: 8px 16px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 17.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.pagination .active{
+    background: linear-gradient(135deg, #0084FF 0%, #0FD3FE 100%);
+    backdrop-filter: blur(26.830238342285156px);
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* Product page styling */
+
+.product{
+    margin: 32px 220px 0px 220px;
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+}
+
+.product .side-cards .product-card1{
+    display: flex;
+    height: 222px;
+    border-radius: 12px;
+    background: linear-gradient(-90deg, rgba(102, 96, 160, 0.20) 0%, rgba(102, 96, 160, 0.00) 100%);
+    backdrop-filter: blur(17.14285659790039px);
+}
+
+.product .side-cards .product-card1 img{
+    margin: 19px 34px;
+}
+
+.product .side-cards .product-card1 h3{
+    margin: 49px 41px 0px 0px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.product .side-cards .product-card1 p{
+    width: 383px;
+    margin: 12px 41px 0px 0px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.6;
+}
+
+
+.product .side-cards .product-card2{
+    display: flex;
+    border-radius: 12px;
+    background: linear-gradient(90deg, rgba(102, 96, 160, 0.20) 0%, rgba(102, 96, 160, 0.00) 100%);
+    backdrop-filter: blur(17.14285659790039px);
+    margin-top: 16px;
+    padding: 10px 0px;
+    align-items: center;
+}
+
+.product .side-cards .product-card2 img{
+    margin: 9px 34px;
+}
+
+.product .side-cards .product-card2 h3{
+    margin: 39px 0px 0px 41px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.product .side-cards .product-card2 p{
+    width: 383px;
+    margin: 12px 0px 0px 41px;
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.6;
+}
+
+.product .product-card3{
+    border-radius: 12px;
+    background: linear-gradient(0deg, rgba(102, 96, 160, 0.20) 0%, rgba(102, 96, 160, 0.00) 100%);
+    backdrop-filter: blur(17.14285659790039px);
+    padding: 0px 51px 33px 51px;
+}
+
+.product .product-card3 h3{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.6;
+    margin-top: 34px;
+}
+
+.product .product-card3 p{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 370px;
+    margin-top: 12px;
+    opacity: 0.7;
+}
+
+
+.youtube-video{
+    width: 944px;
+    height: 508px;
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(1px);
+    margin:32px auto;
+    position: relative;
+    z-index: 1;
+}
+
+.youtube-video iframe{
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Blogs on home page */
+
+
+.blog-upperText{
+    margin: 70px 0px 0px 0px;
+    text-align: center;
+    position: relative;
+}
+
+.blog-upperText .blog-heading{
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 1;
+}
+
+.blog-upperText .inner-text{
+    background: linear-gradient(90deg, #0084FF 52%, #0FD3FE 81.1%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Plus Jakarta Sans";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.blog-upperText .blog-text{
+    margin: 16px 0px 0px 0px;
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/* contact us sumit message */
+
+
+.contact-card-submit {
+    width: 942px;
+    height: 632px;
+    border-radius: 14px;
+    border: 1px solid transparent;
+    background:
+    linear-gradient( 97deg, rgb(12 24 58) 0%, rgb(16 14 64) 100%) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(17.14285659790039px);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-card-submit .svg1{
+    margin: 117px 0px 0px 372px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-card-submit .svg2{
+    position: absolute;
+    margin: 130px 0px 0px 538px;
+}
+
+.contact-card-submit h1{
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 48px auto;
+}
+
+.contact-card-submit .inner-text{
+    background: linear-gradient(90deg, #0084FF 63.62%, #0FD3FE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Plus Jakarta Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contact-card-submit p{
+    margin-top: calc(48px - 88px);
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.contact-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.contact-card-submit .contact-btns button{
+    width: 145px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: linear-gradient(96deg, #3561F6 0%, #0FD3FE 100%);
+    backdrop-filter: blur(2px);
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animations */
+
+.desktop-nav{
+    animation: fadeDown 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.services .sevices-heading{
+    animation: fadeDown 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.services .services-smallText{
+    animation: fadeDown 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.services .service-card .image {
+    animation: fadeX 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.services .service-card .text{
+    animation: fadeY 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.services .service-card2 .image{
+    animation: fadeY 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.services .service-card2 .text{
+    animation: fadeX 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.services .btn{
+    animation: fadeUp 3000ms forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.company-heading-div{
+    animation: fadeDown 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    animation-delay: 1s;
+}
+
+.testimonials{
+    animation: fadeDown 3000ms forwards;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    animation-delay: 1s; 
+}
+
+
+.hero-container .main-text{
+    animation: fadeIn 2000ms forwards;
+    opacity: 0;
+    animation-delay: 500ms;
+}
+
+.hero-container .small-text{
+    animation: fadeIn 2000ms forwards;
+    opacity: 0;
+    animation-delay: 500ms;
+}
+
+.hero-container .mid-Btn .tutorial-btn{
+    animation: fadeIn 2000ms forwards;
+    opacity: 0;
+    animation-delay: 500ms;
+}
+
+.hero-container .mid-Btn .btn{
+    animation: fadeIn 2000ms forwards;
+    opacity: 0;
+    animation-delay: 500ms;
+}
+
+.hero-container .dashboard-img{
+    animation: fadeUp 3000ms forwards;
+    opacity: 0;
+}
+
+/* .testimonial-cards{
+    animation: fadeIn 3000ms forwards;
+    opacity: 0;
+} */
+
+.schudule-card .schudule-text{
+    animation: fadeDown 3000ms forwards;
+    opacity: 0;
+}
+
+.schudule-card .btn{
+    animation: fadeUp 3000ms forwards;
+    opacity: 0;
+}
+
+footer{
+    animation: fadeUp 3000ms forwards;
+    opacity: 0  
+}
+@keyframes fadeX {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+
+@keyframes fadeY {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeIn {
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* .animate-card {
+    animation: slide 3000ms infinite linear;
+}
+
+@keyframes slide {
+    form {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-100px);
+    }
+} */
+
+
+
+/* Testimonials Page CSS here */
+
+
+.testimonial{
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial .testi-cards{
+    width: 1136px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    border: 0.536px solid transparent;
+    background: linear-gradient(rgb(23 17 52), rgb(14 9 43)) padding-box,
+    linear-gradient(40deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(17.14285659790039px);
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    padding: 65px 95px;
+    margin-top: 48px;
+}
+
+.testimonial .testi-cards .img-section .testiminial-img{
+    position: absolute;
+    margin-left: -195px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin-top: 5px;
+}
+
+.testimonial .testi-cards .text-section{
+    width: 100%;
+}
+
+.testimonial .testi-cards .text-section .name-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial .testi-cards .text-section .name-rating .name-role{
+    display: flex;
+    gap: 14px;
+    margin-top: 16px;
+}
+
+.testimonial .testi-cards .text-section .name-rating .name-role h4{
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.testimonial .testi-cards .text-section .name-rating .name-role p{
+    color: rgba(255, 255, 255, 0.50);
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.testimonial .testi-cards .text-section .text{
+    margin-top: 20px;
+}
+
+.testimonial .testi-cards .text-section .text .text-heading{
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.testimonial .testi-cards .text-section .text .text-here{
+    width: 700px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 25.6px */
+    margin: 12px 0px;
+}
+
+.testimonial .testi-cards .last-svg{
+    display: flex;
+    justify-content: right;
+}
+
+ /* Second testimonila card */
+
+.testimonial .testi-cards2{
+    width: 1136px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    border: 0.536px solid transparent;
+    background: linear-gradient(rgb(23 17 52), rgb(14 9 43)) padding-box,
+    linear-gradient(40deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(17.14285659790039px);
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    padding: 65px 95px;
+    margin-top: 48px;
+}
+
+.testimonial .testi-cards2 .img-section .background-img{
+    -webkit-transform: scaleX(-1);
+     transform: scaleX(-1);
+}
+
+.testimonial .testi-cards2 .img-section .testiminial-img{
+    position: absolute;
+    margin-left: -200px;
+    margin-top: 5px;
+}
+
+.testimonial .testi-cards2 .text-section{
+    width: 100%;
+}
+
+.testimonial .testi-cards2 .text-section .name-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial .testi-cards2 .text-section .name-rating .name-role{
+    display: flex;
+    gap: 14px;
+    margin-top: 16px;
+}
+
+.testimonial .testi-cards2 .text-section .name-rating .name-role h4{
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.testimonial .testi-cards2 .text-section .name-rating .name-role p{
+    color: rgba(255, 255, 255, 0.50);
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.testimonial .testi-cards2 .text-section .text{
+    margin-top: 20px;
+}
+
+.testimonial .testi-cards2 .text-section .text .text-heading{
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.testimonial .testi-cards2 .text-section .text .text-here{
+    width: 700px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 25.6px */
+    margin: 12px 0px;
+}
+
+.testimonial .testi-cards2 .last-svg{
+    display: flex;
+    justify-content: right;
+}
+
+
+.view-more-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 145px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 0.536px solid transparent;
+    background: linear-gradient( #3561F6, #0FD3FE) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(2px);
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    margin-top: 24px;
+}
+
+/* testiminial ends here */
+
+
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.heading .big-text{
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.heading .big-text .inner-text{
+    background: linear-gradient(90deg, #0084FF 52%, #0FD3FE 81.1%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Plus Jakarta Sans";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.heading .small-text{
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.40);
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 16px;
+}
+
+
+/* Product page product heiglisghts starts here */
+
+.product-h{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    max-width: 1200px;
+    margin: 55px auto;
+}
+
+.product-inner{
+    width: 346px;
+    height: 148px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(53, 97, 246, 0.30);
+    background: linear-gradient(270deg, rgba(13, 67, 118, 0.15) 0%, rgba(11, 17, 104, 0.15) 100%);
+    padding: 12px 12px;
+    display: flex;
+    gap: 16px;
+}
+
+.product-inner .name{
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.8;
+}
+
+.product-inner .text{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 271px;
+    opacity: 0.8;
+    margin-top: 12px;
+}
+
+.product-inner a{
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 32px;
+    background: linear-gradient(90deg, #0084FF 52%, #0FD3FE 81.1%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* Hall of fame on index page styling here */
+
+.fame-icons{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px auto;
+    max-width: 1200px;
+    gap: 27px;
+    justify-content: center;
+}
+
+.fame-icons .icon{
+    width: 138.099px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #091541;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 133px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 0.536px solid transparent;
+    background: linear-gradient( #040833,  #040833) padding-box,
+    linear-gradient(160deg,#0084FF66, #FFFFFFB9, #FFFFFF00) border-box;
+    backdrop-filter: blur(2px);
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+
+
+/* Trusts styling form here */
+
+.trusts {
+    display: flex;
+    justify-content: center;
+    width: 1100px;
+    height: 238px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: linear-gradient(270deg, rgba(13, 67, 118, 0.3) 0%, rgba(11, 17, 104, 0.3) 100%);
+    margin: 0 auto;
+    align-items: center;
+}
+
+.trusts .text-icon{
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+}
+
+.trusts .text-icon .text{
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.trusts .text-icon .icons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    height: 120px;
+    width: 100%;
+}
+
+
+/* ================================================= Responsive Desingn starts form here ======================================= */
+
+/* Here Will be mobile resposive design */
+
+.mobileNav{
+    background: linear-gradient(180deg, rgba(13, 14, 53, 0.40) 50%, rgba(0, 0, 0, 0.00) 180%);
+    backdrop-filter: blur(20px);
+    height: 48px;
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+}
+
+.mobileNav .Logo_button{
+    padding: 15px;
+}
+
+.mobileNav .Logo_button .logo img{
+    width: 15.029px;
+    height: 16.882px;
+    flex-shrink: 0;
+}
+
+.mobileNav .Logo_button .logo{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.mobileNav .Logo_button .button{
+    width: 24px;
+    height: 16px;
+    flex-shrink: 0;
+    opacity: 0.7;
+    color: white;
+}
+
+.mobileNav .Logo_button .logo .logo-text{
+    color: #0084FF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.mobileNav .Logo_button{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.mobileNav .main-manu {
+    width: 100%;
+    height: 640px;
+    background: rgba(3, 4, 33, 0.60);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px); /* WebKit prefix */
+    padding: 24px 16px;
+}
+
+
+.mobileNav .main-manu li{
+    list-style: none;
+    display: flex;
+    gap: 12px;
+}
+
+.mobileNav .main-manu li a{
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.Mob_Buttons{
+    width: 100%;
+    margin-top: 97px;
+    position: relative;
+    z-index: 1;
+}
+
+.Mob_Buttons .TutorButn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    height: 46px;
+    border-radius: 4.286px;
+    background: rgba(53, 97, 246, 0.22);
+    backdrop-filter: blur(2.142857074737549px);
+    color: #3561F6;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Mob_Buttons a{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    border-radius: 4.286px;
+    background: linear-gradient(294deg, #0FD3FE 5.97%, #0E41ED 68.72%);
+    backdrop-filter: blur(2.142857074737549px);
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1050px) {
+    .mobileNav{
+        display: none;
+    }
+    .Mob_Buttons{
+        display: none;
+    }
+    .product-img{
+        width: 1000px;
+    }
+    .notFroWeb{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .AllEclips{
+        display: none;
+    }
+    .wave-svg{
+        display: none;
+    }
+    
+    .desktop{
+        overflow: hidden;
+    }
+
+    .desktop-nav{
+        display: none;
+    }
+
+    .mobileNav{
+        display: block;
+    }
+
+    .hero-container{
+        padding: 0px 16px;
+        margin-top: -70px;
+    }
+
+    .hero-container .main-text{
+        margin-top: 200px;
+        font-size: 28px;
+    }
+
+    .hero-container .main-text .inner-text{
+        font-size: 28px;
+    }
+
+    .hero-container .small-text{
+        font-size: 14px;
+    }
+
+    .hero-container .mid-Btn{
+        display: none;
+    }
+
+    .hero-container .dashboard-img{
+        width: 100%;
+        height: 100%;
+        border-radius: 13px;
+    }
+    
+    .Mob_Buttons{
+        display: block;
+    }
+
+    .cards{
+        padding: 0px 14px;
+        margin-top:60px;
+        margin-bottom: 30px;
+    }
+
+    .cards .animtedCards2ndDiv{
+        display: none;
+    }
+
+    .cards .animate-card {
+        animation: none;
+        overflow-x: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+        gap:17px;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+    
+
+    .cards .animate-card .card{
+        width: 213px;
+        height: 200px;
+        flex-shrink: 0;
+        padding: 12px 12px;
+    }
+
+    .cards .animate-card .card .svg .istImg{
+        width: 43.257px;
+        height: 43.257px;
+        flex-shrink: 0;
+    }
+
+    .cards .animate-card .card .svg .sndImg{
+        width: 26.118px;
+        height: 26.118px;
+        flex-shrink: 0;
+        margin-left: -35px;
+        margin-top: 8px;
+    }
+
+    .cards .animate-card .card .card-heading{
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .cards .animate-card .card .card-text{
+        font-size: 11.426px;
+        margin-top: 7px;
+    }
+
+    .trusts{
+        display: none;
+    }
+
+    .blog-upperText{
+        margin:30px;
+    }
+
+    .blog-upperText .blog-heading{
+        font-size: 28px;
+    }
+
+    .blog-upperText .blog-heading .inner-text{
+        font-size: 28px;
+    }
+
+    .blog-upperText .blog-text{
+        font-size: 16px;
+    }
+
+    .testimonials{
+        margin-top: 0px;
+        padding:0px 16px;
+    }
+
+    .testimonials .testimonials-heading{
+        font-size: 28px;
+    }
+
+    .testimonials .testimonials-heading .inner-text{
+        font-size: 28px;
+    }
+
+    .testimonial .testimonials-text{
+        font-size: 16px;
+    }
+    
+    .NotOnPhone{
+        display: none;
+    }
+    
+    .product-img {
+        width: 80%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .product-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-container .main-text{
+        animation: none;
+        opacity: 0.8;
+    }
+
+    .Mob_services{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 20px;
+        gap: 12px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .Mob_services .service-card{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 381px;
+        flex-shrink: 0;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 16px;
+        background: linear-gradient(270deg, #071828 0%, #0e1250 100%);
+        padding: 30px 0px ;
+    }
+
+    .Mob_services .service-card .image img{
+        width: 100%;
+        height: 141.618px;
+    }
+
+    .Mob_services .service-card .text{
+        text-align: center;
+        padding: 0px 2px;
+    }
+
+    .Mob_services .service-card .text .card-heading{
+        color: #FFF;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 9px;
+    }
+
+    .Mob_services .service-card .text .card-text{
+        color: #FFF;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        opacity: 0.7;
+        margin-top: 8px;
+    }
+
+    .Mob_services .service-card .text .see-more-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: #3561F6;
+        text-align: right;
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 8px;
+    }
+
+    .Mob_AllServices{
+        padding: 0px 16px;
+        margin: 60px 0px;
+    }
+
+    .Mob_AllServices a{
+        height: 46px;
+        width: 100%;
+        border-radius: 4.286px;
+        background: linear-gradient(294deg, #0FD3FE 5.97%, #0E41ED 68.72%);
+        backdrop-filter: blur(2.142857074737549px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #FFF;
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .company-heading-div{
+        padding: 0px 16px;
+    }
+
+    .company-heading-div .company-heading{
+        font-size: 28px;
+    }
+
+    .company-heading-div .company-heading .inner-text{
+        font-size: 28px;
+    }
+
+    .company-cards{
+        gap: 13px;
+        padding: 0px 10px;
+    }
+
+    .company-cards .card1{
+        width: 101px;
+        height: 69px;
+        flex-shrink: 0;
+    }
+
+    .company-cards .card1:hover {
+        pointer-events: none;
+    }
+
+    .company-cards .card1 svg{
+        width: 68.022px;
+        height: 33.579px;
+        flex-shrink: 0;
+    }
+    .company-cards .card1 .svg1{
+        width: 30.022px;
+        height: 33.579px;
+        flex-shrink: 0;
+    }
+
+    .company-cards .card1 .svg2{
+        width: 40.022px;
+        height: 33.579px;
+        flex-shrink: 0;
+    }
+
+    .upper-card .testimonial-cards{
+        overflow-x: scroll;
+        animation: none;
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+        gap:12px;
+        padding: 0px 20px;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+
+
+    .hero-container .main-text{
+        animation: none;
+        opacity: 0.8;
+    }
+    .hero-container{
+        animation: none;
+        opacity: 1;
+    }
+    .hero-container .dashboard-img{
+        animation: none;
+        opacity: 1;
+    }
+    .company-heading-div{
+        animation: none;
+        opacity: 1;
+    }
+    .testimonials{
+        animation: none;
+        opacity: 1;
+    }
+    .hero-container .small-text{
+        animation: none;
+        opacity: 1;
+    }
+
+    .schudule-card .btn{
+        animation: none;
+        opacity: 1;
+    }
+
+    footer{
+        animation: none;
+        opacity: 1;
+    }
+
+    .schudule-card .schudule-text{
+        animation: none;
+        opacity: 1;
+    }
+
+    .upper-card .NotForPhone{
+        display: none;
+    }
+
+    .upper-card .testimonial-cards .card-upper:hover{
+        pointer-events: none;
+    }
+    .upper-card .testimonial-cards .card-upper .testimonial-card{
+        width: 276px;
+        height: 280px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 0.3px solid #FFF;
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(2px);
+        padding: -10px -10px;
+     }
+    
+     .upper-card .testimonial-cards .card-upper .testimonial-card .image{
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+     }
+
+     .upper-card .testimonial-cards .card-upper .testimonial-card .name{
+        font-size: 18px;
+        margin-top: 8px;
+     }
+
+     .upper-card .testimonial-cards .card-upper .testimonial-card .role{
+        font-size: 12px;
+        margin-top: 4px;
+
+     }
+
+     .upper-card .testimonial-cards .card-upper .testimonial-card .detail{
+        font-size: 14px;
+        width: 100%;
+        padding-right: 30px;
+     }
+
+     .heading{
+        margin: 0px;
+        position: relative;
+        z-index: 1;
+     }
+
+     .heading .big-text{
+        font-size: 28px;
+     }
+
+     .heading .big-text .inner-text{
+        font-size: 28px;
+     }
+
+     .heading .small-text{
+        font-size: 16px;
+        padding:0px 15px;
+     }
+
+     .fame-icons{
+        gap: 13px;
+        padding: 0px 10px;
+        position: relative;
+        z-index: 1;
+     }
+
+     .fame-icons .icon{
+        width: 101px;
+        height: 69px;
+        flex-shrink: 0;
+     }
+
+     .fame-icons .icon img{
+        width: 67.981px;
+        height: 21.987px;
+        flex-shrink: 0;
+     }
+
+    .view-moreBtn{
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        justify-content: center;
+        color: #3561F6;
+        text-align: right;
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+        margin-top: -30px;
+        position: relative;
+        z-index:1;
+     }
+
+     .fame-icons .NotOnPhone{
+        display: none;
+     }
+
+     .schudule-card{
+        width: 90%;
+        height: 180px;
+     }
+
+     .schudule-card .bg-img{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+     }
+    
+    .schudule-card .schudule-text{
+        width: 100%;
+        font-size: 16px;
+        padding: 20px 35px;
+    }
+
+    .schudule-card .schudule-text .inner-text{
+        font-size: 16px;
+    }
+    .schudule-card .btn{
+        margin-top: 10px;
+        width: 148px;
+        height: 46px;
+        flex-shrink: 0;
+        border-radius: 4.286px;
+        border: 1px solid transparent;
+        background: linear-gradient(294deg, #0FD3FE 5.97%, #0E41ED 68.72%);
+        backdrop-filter: blur(2.142857074737549px);
+    }
+
+    footer .footer{
+       display: none;
+    }
+
+    .Mob_footer {
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 10px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .Mob_footer .footer-content{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+    }
+
+    .Mob_footer .footer-content .name{
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .Mob_footer .footer-content ul{
+        list-style: none;
+    }
+
+    .Mob_footer .footer-content ul li{
+        margin-top: 8px;
+    }
+
+    .Mob_footer .footer-content ul li a{
+        text-decoration: none;
+        color: #FFF;
+        font-family: Plus Jakarta Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .Mob_eclips{
+        overflow: hidden;
+    }
+
+    .Eclps1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 368px;
+        height: 368px;
+        overflow: hidden;
+        border-radius: 50%;
+        filter: blur(40px);
+        margin-top: -80px;
+        margin-left: 120px;
+    }
+    
+    .Eclps1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: rgba(123, 1, 167, 0.25);
+        filter: blur(100px);
+    }
+
+    .Eclps2{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 368px;
+        height: 368px;
+        overflow: hidden;
+        border-radius: 286px;
+        filter: blur(100px);
+        margin-top: 250px;
+        margin-left: -150px; 
+    }
+
+    .Eclps2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 286px;
+        background: rgba(54, 1, 167, 0.70);
+        filter: blur(100px);
+    }
+    
+    .Eclps3 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 368px;
+        height: 368px;
+        overflow: hidden;
+        border-radius: 368px;
+        filter: blur(40px);
+        margin-top: 400px;
+        margin-left: 120px;
+    }
+    
+    .Eclps3::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: rgba(123, 1, 167, 0.25);
+        filter: blur(100px);
+    }
+    
+    
+}
+
+
+

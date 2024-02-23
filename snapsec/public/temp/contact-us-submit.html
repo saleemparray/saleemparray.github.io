@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="icon" href="public/images/logo.svg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Josefin+Sans:wght@100;400;500&family=Plus+Jakarta+Sans:wght@500;700&display=swap"
+    rel="stylesheet">
+  <title>Snapsec - Your Security, Centralized</title>
+  <link rel="stylesheet" type="text/css" href="public/style.css">
+  <script src="https://kit.fontawesome.com/ac1e998d8e.js" crossorigin="anonymous"></script>
+</head>
+
+<script>
+  function setActiveClass() {
+    var currentUrl = window.location.pathname;
+
+    var links = document.querySelectorAll('.main-manu a');
+    links.forEach(function (link) {
+      link.classList.remove('active');
+    });
+
+    links.forEach(function (link) {
+      var href = link.getAttribute('href');
+      if (href === currentUrl) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', setActiveClass);
+</script>
+
+
+<body class="lazy-load-animations">
+  <div class="desktop">
+    <nav class="desktop-nav">
+      <div class="logo">
+        <a href="/" class="image">
+          <img src="public/images/logo.svg" alt="" />
+        </a>
+        <p class="logo-text">Snapsec</p>
+      </div>
+
+      <ul class="main-manu">
+        <li>
+          <a href="index.html" class="active">Home</a>
+        </li>
+
+        <li>
+          <a href="/products/csm.html">Product</a>
+        </li>
+
+        <li>
+          <a href="/services.html">Service</a>
+        </li>
+
+        <li>
+          <a href="https://snapsec.co/blog" target="_blank">Blog</a>
+        </li>
+
+        <li>
+          <a href="/contact-us.html">Contact Us</a>
+        </li>
+      </ul>
+
+      <a href="contact-us.html"><button class="btn">
+          Get Started
+        </button></a>
+    </nav>
+  <div class="hero-container">
+    <h1 class="main-text">
+      Get In Touch <span class="inner-text"> With Us</span>
+    </h1>
+    <p class="small-text">
+      Have a question or need assistance? Reach out to us through our contact form, and we'll be delighted to help!
+    </p>
+
+    <div class="wave-svg">
+      <img src="public/images/wave.png">
+    </div>
+
+    <div class="profile-img">
+      <!-- <div class="profile-text-img">
+        <div class="profiles">
+          <img src="public/images/profiles/1.png">
+          <img src="public/images/profiles/2.svg">
+          <img src="public/images/profiles/3.svg">
+        </div>
+        <div class="text">
+          <p>Rob Stark, Jon Snow,Imran Parray and <span class="num">2397273</span> others contacted us!</p>
+        </div>
+      </div> -->
+    </div>
+  </div><br><br>
+
+
+
+  <!-- backgroundpublic/images -->
+
+
+  <div class="eclips1">
+
+  </div>
+
+  <div class="eclips2">
+
+  </div>
+
+  <div class="eclips3">
+
+  </div>
+  <div class="ellipse-contact">
+
+  </div>
+
+
+  <!-- Middle Card -->
+
+
+  <div class="contact-card-submit">
+
+    <div class="svg2">
+        <svg width="108" height="82" viewBox="0 0 108 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.07139 81.0432C0.905168 81.0447 0.744176 80.9852 0.618765 80.8761C0.493353 80.767 0.41219 80.6158 0.390586 80.4509C-2.77516 57.678 13.8501 43.7827 30.4618 38.3703C47.7951 32.7264 60.036 40.2425 60.5535 40.5625C60.7078 40.6591 60.8175 40.8131 60.8584 40.9905C60.8992 41.168 60.8679 41.3544 60.7713 41.5088C60.6747 41.6632 60.5207 41.7729 60.3433 41.8137C60.1658 41.8546 59.9794 41.8233 59.825 41.7267C59.7024 41.6518 47.5705 34.2378 30.8907 39.6843C14.8033 44.9265 -1.30462 58.3384 1.7522 80.2739C1.76563 80.3635 1.76107 80.4548 1.73879 80.5425C1.7165 80.6303 1.67695 80.7127 1.62243 80.7849C1.56791 80.8572 1.49952 80.9179 1.42127 80.9634C1.34302 81.0089 1.25648 81.0384 1.1667 81.0501L1.07139 81.0432Z" fill="#3561F6" />
+            <path d="M106.494 0L62.8002 25.2239L51.6758 47.6905L62.8002 57.3307L64.0528 58.0524L107.781 32.8421V0.721654L106.494 0ZM61.2752 43.5716C61.3245 42.6444 61.5919 41.742 62.0556 40.9376C62.5194 40.1332 63.1663 39.4495 63.9439 38.9421C64.2916 38.7292 64.6873 38.6075 65.0945 38.5881C65.2784 38.9505 65.3697 39.3528 65.36 39.7591C65.309 40.6859 65.0409 41.5877 64.5774 42.3919C64.1138 43.1961 63.4677 43.88 62.6912 44.3886C62.3378 44.5997 61.9382 44.7212 61.5271 44.7426C61.3459 44.3748 61.2593 43.9677 61.2752 43.558V43.5716Z" fill="#176EF8" />
+            <path d="M64.0531 25.9524L52.9287 48.419L64.0531 58.0524L107.781 32.8421V0.72168L64.0531 25.9524ZM63.9442 45.0966C62.4668 45.9545 61.2754 45.26 61.2754 43.558C61.3248 42.6308 61.5922 41.7284 62.0559 40.924C62.5196 40.1196 63.1665 39.4359 63.9442 38.9285C65.4147 38.0775 66.6129 38.7719 66.6129 40.4672C66.563 41.3942 66.2954 42.2965 65.8317 43.1008C65.368 43.9051 64.7214 44.5889 63.9442 45.0966Z" fill="url(#paint0_linear_1979_1155)" />
+            <path opacity="0.3" d="M66.613 40.4672C66.5631 41.3942 66.2954 42.2965 65.8317 43.1008C65.3681 43.9051 64.7214 44.5889 63.9442 45.0966C62.8753 45.7162 61.9563 45.5255 61.5273 44.729C61.9401 44.7114 62.3412 44.5871 62.6915 44.3682C63.4686 43.8619 64.1153 43.1794 64.579 42.3761C65.0427 41.5729 65.3104 40.6716 65.3603 39.7455C65.3709 39.3435 65.2795 38.9453 65.0948 38.5881C65.2793 38.5789 65.4638 38.6073 65.6371 38.6717C65.8103 38.7361 65.9686 38.835 66.1024 38.9626C66.2837 39.1665 66.4223 39.4048 66.51 39.6632C66.5977 39.9216 66.6327 40.195 66.613 40.4672Z" fill="black" />
+            <path opacity="0.6" d="M107.747 0.721654L106.494 0L62.7998 25.2239L64.0525 25.9523L107.747 0.721654Z" fill="#44A9F2" />
+            <path opacity="0.3" d="M52.9285 48.4394L64.0528 58.0728L62.8002 57.3512L51.6758 47.7109L52.9285 48.4394Z" fill="black" />
+            <path d="M57.9868 52.9667C57.3347 52.9653 56.6852 52.883 56.0533 52.7216C55.8728 52.6782 55.7168 52.565 55.6198 52.4066C55.5228 52.2483 55.4926 52.0579 55.5359 51.8774C55.5793 51.6968 55.6926 51.5409 55.8509 51.4438C56.0092 51.3468 56.1996 51.3166 56.3801 51.36C57.6842 51.7396 59.0823 51.6278 60.3095 51.0456C61.5366 50.4634 62.5076 49.4513 63.0384 48.201C63.7192 46.5399 63.7805 44.1162 61.5475 42.6797C61.394 42.5813 61.2859 42.4259 61.2469 42.2478C61.208 42.0697 61.2414 41.8834 61.3398 41.73C61.4382 41.5765 61.5936 41.4684 61.7717 41.4294C61.9498 41.3905 62.136 41.4239 62.2895 41.5223C65.0536 43.2856 65.2919 46.4173 64.3319 48.7389C63.817 49.9963 62.9375 51.0709 61.8068 51.8243C60.676 52.5778 59.3456 52.9756 57.9868 52.9667Z" fill="#6586F7" />
+            <path d="M69.3816 44.8568V34.4268L72.3278 32.7258C73.3058 32.1612 74.1545 31.8952 74.8739 31.9278C75.5933 31.9605 76.151 32.2545 76.547 32.8098C76.9431 33.3652 77.1411 34.1468 77.1411 35.1548C77.1411 36.1628 76.9431 37.1778 76.547 38.1998C76.151 39.2125 75.5933 40.1505 74.8739 41.0138C74.1545 41.8772 73.3058 42.5912 72.3278 43.1558L69.3816 44.8568ZM71.2608 41.8818L72.3763 41.2378C72.9663 40.8972 73.4755 40.4678 73.9039 39.9498C74.3323 39.4225 74.6637 38.8438 74.8981 38.2138C75.1406 37.5698 75.2619 36.9118 75.2619 36.2398C75.2619 35.5585 75.1406 35.0405 74.8981 34.6858C74.6637 34.3265 74.3323 34.1352 73.9039 34.1118C73.4755 34.0885 72.9663 34.2472 72.3763 34.5878L71.2608 35.2318V41.8818ZM82.867 37.239C82.188 37.631 81.5575 37.8597 80.9756 37.925C80.3936 37.9904 79.8844 37.9064 79.4479 37.673C79.0195 37.4257 78.6841 37.0454 78.4416 36.532C78.1991 36.0187 78.0778 35.3794 78.0778 34.614C78.0778 33.8487 78.195 33.0717 78.4294 32.283C78.6719 31.4897 79.0074 30.7267 79.4358 29.994C79.8722 29.2567 80.3815 28.5847 80.9634 27.978C81.5454 27.3714 82.1799 26.8697 82.867 26.473C83.554 26.0764 84.1885 25.8454 84.7705 25.78C85.3525 25.7147 85.8576 25.801 86.286 26.039C86.7225 26.2724 87.0579 26.648 87.2924 27.166C87.5348 27.6794 87.6561 28.3187 87.6561 29.084C87.6561 29.8494 87.5348 30.6287 87.2924 31.422C87.0499 32.2154 86.7104 32.9854 86.2739 33.732C85.8455 34.4647 85.3403 35.1344 84.7584 35.741C84.1764 36.3477 83.5459 36.847 82.867 37.239ZM82.867 35.279C83.2792 35.041 83.6591 34.7377 84.0067 34.369C84.3623 33.9957 84.6735 33.5827 84.9402 33.13C85.207 32.668 85.4131 32.185 85.5586 31.681C85.7041 31.177 85.7768 30.673 85.7768 30.169C85.7768 29.665 85.7041 29.2497 85.5586 28.923C85.4131 28.587 85.207 28.342 84.9402 28.188C84.6735 28.034 84.3623 27.9804 84.0067 28.027C83.6591 28.0597 83.2792 28.195 82.867 28.433C82.4547 28.671 82.0708 28.9767 81.7151 29.35C81.3676 29.7094 81.0604 30.12 80.7937 30.582C80.527 31.044 80.3208 31.527 80.1754 32.031C80.0299 32.5257 79.9571 33.025 79.9571 33.529C79.9571 34.033 80.0299 34.453 80.1754 34.789C80.3208 35.125 80.527 35.37 80.7937 35.524C81.0604 35.6687 81.3676 35.7247 81.7151 35.692C82.0708 35.6547 82.4547 35.517 82.867 35.279ZM88.9889 33.5365V23.1065L90.4317 22.2735L95.2814 26.8515L94.5055 27.5095V19.9215L96.3848 18.8365V29.2665L94.9298 30.1065L90.165 25.4235L90.8682 24.8075V32.4515L88.9889 33.5365ZM97.9875 28.3412V17.9112L104.062 14.4042V16.2942L99.8667 18.7162V21.0822L103.819 18.8002V20.6902L99.8667 22.9722V25.3662L104.062 22.9442V24.8342L97.9875 28.3412Z" fill="white" />
+            <defs>
+                <linearGradient id="paint0_linear_1979_1155" x1="53.1032" y1="47.9968" x2="114.376" y2="12.9353" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#3561F6" />
+                    <stop offset="1" stop-color="#0FD3FE" />
+                </linearGradient>
+            </defs>
+        </svg>
+        
+    </div>
+    <div class="svg1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="198" height="143" viewBox="0 0 198 143" fill="none">
+            <rect x="21.3613" y="53.4026" width="154.456" height="89.5519" rx="8" fill="url(#paint0_linear_1979_1168)"/>
+            <g filter="url(#filter0_b_1979_1168)">
+              <path d="M104.734 111.593C101.593 114.821 96.4073 114.821 93.2663 111.593L26.4761 42.9502C21.5424 37.8798 25.1351 29.3712 32.2098 29.3712L165.79 29.3713C172.865 29.3713 176.458 37.8798 171.524 42.9502L104.734 111.593Z" fill="url(#paint1_linear_1979_1168)" fill-opacity="0.2"/>
+              <path d="M104.542 111.406C101.506 114.526 96.4941 114.526 93.4583 111.406L26.668 42.7634C21.8996 37.8627 25.372 29.6391 32.2098 29.6391L165.79 29.6391C172.628 29.6391 176.1 37.8628 171.332 42.7634L104.542 111.406Z" stroke="url(#paint2_linear_1979_1168)" stroke-width="0.535714"/>
+            </g>
+            <defs>
+              <filter id="filter0_b_1979_1168" x="-10.0924" y="-4.91438" width="218.185" height="153.214" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feGaussianBlur in="BackgroundImageFix" stdDeviation="17.1429"/>
+                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1979_1168"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1979_1168" result="shape"/>
+              </filter>
+              <linearGradient id="paint0_linear_1979_1168" x1="21.3613" y1="89.9627" x2="219.361" y2="89.9627" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#3561F6"/>
+                <stop offset="1" stop-color="#0FD3FE"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_1979_1168" x1="196.108" y1="118.352" x2="18.6352" y2="8.78816" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0.44"/>
+              </linearGradient>
+              <linearGradient id="paint2_linear_1979_1168" x1="198" y1="-9.91821e-05" x2="17.0892" y2="136.724" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0084FF" stop-opacity="0.4"/>
+                <stop offset="0.407091" stop-color="white" stop-opacity="0.726314"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+          </svg>
+    </div>
+
+
+
+
+    <h1>Registered  <span class="inner-text">Successfully!</span></h1>
+    <p>We will contact you within an hour. At morbi venenatis amet nulla <br> nulla adipiscing nibh ultricies. A sem auctor dui eu pellentesque</p>
+  
+
+    <div class="contact-btns">
+        <button>
+            Back
+        </button>
+    </div>
+  </div>
+
+
+  <!-- Social Media  -->
+
+  <div class="social-media">
+    <p>FOLLOW OUR SOCIALS</p>
+    <div class="links">
+      <!-- <svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+        <path
+          d="M9.75 21.45V21.6H9.9H13.05V32.4853C5.6839 30.8961 0.15 24.3493 0.15 16.5C0.15 7.47484 7.47484 0.15 16.5 0.15C25.5252 0.15 32.85 7.47484 32.85 16.5C32.85 24.929 26.4775 31.8579 18.3 32.7511V21.6H23.1H23.25V21.45V16.5V16.35H23.1H18.3V13.2C18.3 12.3753 18.9753 11.7 19.8 11.7H23.1H23.25V11.55V6.6V6.45H23.1H18.975C15.7077 6.45 13.05 9.10766 13.05 12.375V16.35H9.9H9.75V16.5V21.45Z"
+          fill="url(#paint0_linear_1178_3590)" fill-opacity="0.2" stroke="white" stroke-width="0.3" />
+        <defs>
+          <linearGradient id="paint0_linear_1178_3590" x1="3" y1="2" x2="30" y2="31.5" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" />
+            <stop offset="1" stop-color="white" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg> -->
+
+          <!--   <svg class="youtube" xmlns="http://www.w3.org/2000/svg" width="46" height="33" viewBox="0 0 46 33" fill="none">
+        <path
+          d="M44.9639 7.28644C44.9639 3.41936 42.0835 0.308507 38.5243 0.308507C33.7032 0.0859349 28.7864 0 23.7617 0H22.1953C17.1828 0 12.2573 0.085935 7.43628 0.309366C3.88576 0.309366 1.0053 3.43741 1.0053 7.30449C0.787747 10.3629 0.695503 13.4222 0.700725 16.4815C0.692022 19.5408 0.790648 22.603 0.996602 25.668C0.996602 29.5351 3.87705 32.6717 7.42758 32.6717C12.4923 32.9037 17.6876 33.0068 22.9698 32.9982C28.2608 33.0154 33.4416 32.9066 38.5121 32.6717C42.0713 32.6717 44.9518 29.5351 44.9518 25.668C45.1606 22.6001 45.2563 19.5408 45.2476 16.4729C45.2674 13.4136 45.1728 10.3515 44.9639 7.28644ZM18.7144 24.9117V8.02549L31.3327 16.4643L18.7144 24.9117Z"
+          fill="url(#paint0_linear_1178_3592)" fill-opacity="0.2" stroke="white" stroke-width="0.3" />
+        <defs>
+          <linearGradient id="paint0_linear_1178_3592" x1="-4" y1="31.5789" x2="48.8175" y2="18.8893"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#white" />
+            <stop offset="1" stop-color="white" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg> -->
+
+
+      <a href="https://twitter.com/snap_sec"><svg class="twitter" xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+        <path
+          d="M25.2704 1.3131L25.2705 1.31307C25.4002 1.16474 25.5578 1.04341 25.7345 0.956004C25.9111 0.868603 26.1032 0.816843 26.2998 0.80368C26.4964 0.790517 26.6937 0.816208 26.8803 0.879287C27.067 0.942366 27.2394 1.0416 27.3878 1.17131C27.5361 1.30103 27.6574 1.45869 27.7448 1.6353C27.8322 1.81191 27.884 2.004 27.8972 2.20061C27.9103 2.39722 27.8846 2.5945 27.8216 2.78118C27.7585 2.96787 27.6593 3.1403 27.5295 3.28863L18.6361 13.4509L18.556 13.5424L18.629 13.6397L29.25 27.8C29.4171 28.0229 29.5189 28.2879 29.5439 28.5653C29.569 28.8428 29.5162 29.1217 29.3916 29.3708C29.2671 29.62 29.0756 29.8295 28.8386 29.976C28.6016 30.1225 28.3286 30.2 28.05 30.2H21.45C21.2171 30.2 20.9875 30.1458 20.7792 30.0417C20.5709 29.9375 20.3897 29.7863 20.25 29.6L20.13 29.69L20.25 29.6L13.0939 20.0597L12.9829 19.9117L12.8611 20.051L4.42956 29.6886L4.42954 29.6886C4.29982 29.837 4.14216 29.9583 3.96555 30.0457C3.78894 30.1331 3.59685 30.1849 3.40024 30.198C3.20362 30.2112 3.00635 30.1855 2.81966 30.1224C2.63298 30.0593 2.46055 29.9601 2.31222 29.8304C2.16389 29.7007 2.04256 29.543 1.95516 29.3664C1.86775 29.1898 1.81599 28.9977 1.80283 28.8011C1.78967 28.6045 1.81536 28.4072 1.87844 28.2205C1.94151 28.0338 2.04073 27.8614 2.17044 27.7131C2.17045 27.7131 2.17046 27.7131 2.17047 27.7131L11.0639 17.5491L11.144 17.4576L11.071 17.3603L0.450001 3.20002C0.45 3.20002 0.449999 3.20002 0.449997 3.20002C0.282859 2.97717 0.181079 2.71217 0.156062 2.43473C0.131045 2.15729 0.18378 1.87836 0.30836 1.6292C0.432939 1.38005 0.62444 1.1705 0.861404 1.02405C1.09837 0.877596 1.37143 0.800024 1.65 0.800024H8.25C8.48287 0.800024 8.71254 0.854242 8.92082 0.958383C9.1291 1.06253 9.31028 1.21373 9.45 1.40002L9.45001 1.40003L16.6061 10.9403L16.7171 11.0884L16.8389 10.9491L25.2704 1.3131Z"
+          fill="url(#paint0_linear_1178_3591)" fill-opacity="0.2" stroke="white" stroke-width="0.3" />
+        <defs>
+          <linearGradient id="paint0_linear_1178_3591" x1="2.7" y1="2.45462" x2="27.0674" y2="29.0105"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" />
+            <stop offset="1" stop-color="white" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg></a>
+
+        <a href="https://linkedin.com/company/snapsec/"><svg class="linkedin" xmlns="http://www.w3.org/2000/svg" width="34" height="33" viewBox="0 0 34 33" fill="none">
+        <path
+          d="M28.6667 28.5667H28.8167V28.4167V18.7C28.8167 17.0751 28.1712 15.5168 27.0222 14.3678C25.8732 13.2188 24.3149 12.5733 22.69 12.5733C21.2311 12.5733 19.5622 13.3784 18.5867 14.6289V13.0717V12.9217H18.4367H13.3217H13.1717V13.0717V28.4167V28.5667H13.3217H18.4367H18.5867V28.4167V19.3783C18.5867 18.0481 19.6576 16.9617 20.985 16.9617C21.6259 16.9617 22.2406 17.2163 22.6938 17.6695C23.1471 18.1227 23.4017 18.7374 23.4017 19.3783V28.4167V28.5667H23.5517H28.6667ZM9.91167 28.5667H10.0617V28.4167V13.0717V12.9217H9.91167H4.83333H4.68333V13.0717V28.4167V28.5667H4.83333H9.91167ZM29.5833 0.15C30.516 0.15 31.4105 0.520505 32.07 1.18001C32.7295 1.83951 33.1 2.73399 33.1 3.66667V29.3333C33.1 30.266 32.7295 31.1605 32.07 31.82C31.4105 32.4795 30.516 32.85 29.5833 32.85H3.91667C2.98399 32.85 2.08951 32.4795 1.43001 31.82C0.770505 31.1605 0.4 30.266 0.4 29.3333V3.66667C0.4 2.73399 0.770505 1.83951 1.43001 1.18001C2.08951 0.520505 2.98399 0.15 3.91667 0.15H29.5833ZM7.36333 10.3433C8.21998 10.3433 9.04155 10.003 9.64729 9.39729C10.253 8.79155 10.5933 7.96998 10.5933 7.11333C10.5933 5.32665 9.15233 3.865 7.36333 3.865C6.50182 3.865 5.6756 4.20723 5.06641 4.81641C4.45723 5.4256 4.115 6.25182 4.115 7.11333C4.115 8.90233 5.57665 10.3433 7.36333 10.3433Z"
+          fill="url(#paint0_linear_1178_3589)" fill-opacity="0.2" stroke="white" stroke-width="0.3" />
+        <defs>
+          <linearGradient id="paint0_linear_1178_3589" x1="3.25" y1="2.00501" x2="30.3236" y2="31.5114"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" />
+            <stop offset="1" stop-color="white" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg></a>
+
+
+    </div>
+
+  </div>
+
+  <!-- Schudule Card -->
+
+
+  <div class="schudule-card">
+    <img class="bg-img" src="public/images/wave2.png">
+    <p class="schudule-text">
+      Don't Wait for a Breach! Schedule a Free <span class="inner-text"> Cybersecurity </span> Consultation Today.
+    </p>
+    <a href="https://meet.brevo.com/snapsecco" class="href-tag">
+      <div class="btn">
+      <p class="text">Talk To Expert</p>
+    </div>
+   </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+  <div class="footer">
+    <div class="footer-logo-section">
+      <div class="name-logo">
+        <img class="image" src="public/images/logo.svg">
+        <h3 class="name">Snapsec</h3>
+      </div>
+
+      <p class="text">
+        Stay Safe Online with Us: Your Trusted Cybersecurity Partner.
+      </p>
+    </div>
+
+    <div class="footer-content">
+      <h3 class="name">
+        Company
+      </h3>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="https://snapsec.co/blog" target="_blank">Blog</a>
+        </li>
+       <!--  <li>
+          <a href="#">Case Studies</a>
+        </li> -->
+        <!-- <li>
+          <a href="https://snapsec.co/blog/">Our Blog</a>
+        </li> -->
+        <li>
+          <a href="#">Terms & Conditions</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-content">
+      <h3 class="name">
+        Services
+      </h3>
+      <ul class="properties">
+        <li>
+          <a href="/services#VSPT">Vulnerability assesment and Penetration Testing</a>
+        </li>
+        <li>
+          <a href="/services#MAPT">Mobile Application Penetration Testing</a>
+        </li>
+        <li>
+          <a href="/services#IPT">Infrastructure Penetration Testing</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-content">
+      <h3 class="name">
+        Products
+      </h3>
+      <ul class="properties">
+        <li>
+          <a href="/products/csm.html">Vulnerability Management</a>
+        </li>
+        <li>
+          <a href="/products/asm.html">Attack Surface Management </a>
+        </li>
+        <li>
+          <a href="/products/vdp.html">Vulnerability Disclosure Programme</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="footer-content">
+      <h3 class="name">
+        Contact Us
+      </h3>
+      <ul class="properties">
+        <li>
+          <a href="#">Address: Snapsec - Office 1098C, 182-184 High Street North, East Ham, London E6 2JA, U</a>
+        </li>
+        <li>
+          <a href="#">Phone UK: +441917431771</a>
+        </li>
+        <li>
+          <a href="#">Phone IN: +917780908136</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+</div>
+
+</body>
+
+</html>
